@@ -1,0 +1,6 @@
+/home/user/sabbatical-application-2022/source/main.ptx:10:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element p, got frontmatter
+/home/user/sabbatical-application-2022/source/main.ptx:10:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
+/home/user/sabbatical-application-2022/source/main.ptx:10:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got frontmatter
+/home/user/sabbatical-application-2022/source/main.ptx:10:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got frontmatter
+/home/user/sabbatical-application-2022/source/main.ptx:10:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element exercise, got frontmatter
+/home/user/sabbatical-application-2022/source/main.ptx:7:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element article failed to validate content
