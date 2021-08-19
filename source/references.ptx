@@ -50,6 +50,37 @@
         <title>Search results for url topology.jdabbs.com on MathOverflow</title>.
         <url href="https://mathoverflow.net/search?q=url%3A%22topology.jdabbs.com%22"/>.
     </biblio>
+    <biblio type="raw" xml:id="biblio-canvas">
+        Instructure,
+        <title>Canvas LMS on GitHub</title>.
+        <url href="https://github.com/instructure/canvas-lms"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-logistics">
+        Shadle, S.E., Marker, A. &amp; Earl, B,
+        <title>Faculty drivers and barriers: laying the groundwork for undergraduate STEM education reform in academic departments</title>.
+        <journal>IJ STEM Ed</journal>,
+        <date>2017</date>,
+        <volume>4</volume>,
+        <issue>8</issue>.
+        <url href="https://doi.org/10.1186/s40594-017-0062-7"/>.
+    </biblio> 
+    <biblio type="raw" xml:id="biblio-calcplot3d">
+        VanDieren, M., Moore-Russo, D., &amp; Seeburger, P.,
+        <title>Technological Pedagogical Content Knowledge for Meaningful Learning and Instrumental Orchestrations:
+        A Case Study of a Cross Product Exploration Using CalcPlot3D.</title>.
+        <journal>Teaching and Learning Mathematics Online</journal>,
+        <date>2020</date>,
+        267<ndash />294.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-ifat">
+        Cotner, S. H., Fall, B. A., Wick, S. M., Walker, J. D., &amp; Baepler, P. M.,
+        <title>Rapid feedback assessment methods: Can we improve engagement and preparation for exams in large-enrollment courses?</title>.
+        <journal>Journal of Science Education and Technology</journal>,
+        <date>2008</date>,
+        <volume>17</volume>,
+        <issue>5</issue>.
+        437<ndash />443.
+    </biblio>
     <biblio type="raw" xml:id="biblio-prez">
         The White House,
         <title>Presidential Decision Directive NSC-63</title>,
