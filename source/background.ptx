@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="background" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Background</title>
+  <introduction>
+    <p>
+The term <term>cyberinfrastructure</term> traces its roots back to
+Presidential Decision Directive NSC-63
+<xref ref="biblio-prez"/>, and is commonly used today to refer to
+<q>computational systems, data and
+information management, advanced instruments, visualization
+environments, and people, all linked together by software and
+advanced networks to improve scholarly productivity and enable
+knowledge breakthroughs and discoveries not otherwise possible</q>
+<xref ref="biblio-cyber-educause"/>. What cyberinfrastructure <q>looks like</q>
+varies greatly between disciplines, but a constant quality of it is
+the utilization of modern technologies that make the jobs of scholars
+more efficient, thereby producing more and better advancements in
+STEM. As such, the National Science Foundation <xref ref="biblio-cyber-nsf"/> 
+and other federal agencies
+have made the development of cyberinfrastructure a key priority in
+supporting STEM scholarship as noted below
+(emphasis added):
+    </p>
+    <blockquote>
+    <p>
+NSF invests in powerful cyberinfrastructure that enhances the ability of researchers
+and educators to access and use scientific data and infrastructure. These assets include
+high-performance computing systems, large-scale data repositories, <em>software suites</em>, networks,
+and digital access to research equipment and instrumentation <em>as well as education resources</em>.
+<xref ref="biblio-cyber-researchgov"/>
+    </p>
+    </blockquote>
+  </introduction>
+  <subsection>
+    <title>Cyberinfrastructure in Mathematics Research</title>
+    <p>
+One of the features of many areas of mathematics, including the applicant's area of
+general topology, is the expansive breadth of open problems that still technically require just
+pencil and paper. Nonetheless, as technology advances, we are seeing more uses for
+tools beyond the blackboard for making advancements in even abstract mathematics.
+One obvious example is the use of high-performance (or even conventional) computing to brute-force
+the exploration of finite mathematical spaces <xref ref="biblio-high-compute"/>.
+    </p>
+    <p>
+But perhaps underrated are the systems used by mathematicians for sharing and collaborating
+bleeding-edge advancements with the community of research. The mathematics written on paper
+or the chalkboard cannot travel far on its own; generally, mathematicians use software such
+as LaTeX to typeset proofs and formulas for distribution in PDF format. Then, rather than asking
+colleagues from across the country to physically visit their office computer, the researcher uses
+technologies such as email, a personal website, and/or a preprint server to post their work
+for dissemination. High-quality work must then be submitted to a journal to be vetted by peers,
+a process handled sometimes through email, and other times via non-trivial content management
+systems hosted in the cloud. These results are then published, but this content is now burned
+into inaccessible (in many senses of the word) PDFs locked behind paywalls. A typical strategy for
+finding recent developments in mathematics is to Google key words, but a search for
+<q>selection games</q>, an area of mathematical game theory studied by the applicant, quickly reveals
+the limitations of this approach.
+    </p>
+    <p>
+One approach to overcoming this limitation is the development of databases of mathematical
+objects. As of writing, the <pubtitle>Catalogue of Mathematical Datasets</pubtitle> <xref ref="biblio-mathdb"/>
+enumerates <m>83</m> such tools. One of these is the
+<pubtitle><m>\pi</m>-Base</pubtitle> (a.k.a. pi-Base) community database of topological counterexamples
+<xref ref="biblio-pibase"/>, created by software engineer James Dabbs. Clontz joined the project in
+2017 to serve as its lead mathematical editor. In the beginning the database was treated similar to a wiki,
+with unreviewed contributions made by several mathematicians, students, and other unknown contributors.
+To address this, changes were made to the software to enforce a level of peer review, and Clontz was awarded
+with an internal Faculty Development Council grant to hire a student to audit and expand the content of the
+database.
+    </p>
+    <p>
+The result of this support was successful, and today the pi-Base is commonly cited on mathematics
+discussion boards used by students and researchers alike <xref ref="biblio-mathse-search"/>
+<xref ref="biblio-mo-search"/>. However, it also exposed critical inefficiencies in the user
+experience (UX) of both contributing to the database and reviewing contributions.
+    </p>
+    <p>
+Another key element of cyberinfrastructure in mathematics research is the tooling used for
+creating both collaborative spaces and venues for dissemination, both virtually and in-person.
+Of course, recent events have exposed the utility of virtual collaborations, and tools such as Zoom and Sococo have
+done well to meet this need both for small meetings and large conferences. But organization of
+large conferences, whether in-person or otherwise, is not easily done without the use of technology.
+Historically, the <pubtitle>Topology Atlas</pubtitle> <xref ref="biblio-atlas"/> met this need,
+not just in topology but in many other areas of mathematics as well,
+but this abstract and conference scheduling service was ended in 2020 following twenty-five years in
+production. Its shuttering has left a void that creates inefficiencies for researchers,
+distracting from their core work.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Cyberinfrastructure in Mathematics Instruction and RUME</title>
+    <p>
+Logistics are frequently a limiting factor in the adoption of evidence-based practices
+in instruction, particularly in undergraduate mathematics education. 
+    </p>
+  </subsection>
+  <subsection>
+    <title>Free and Open-Source Software (FOSS)</title>
+    <p>
+asdf
+    </p>
+  </subsection>
+</section>

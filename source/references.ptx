@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<references xml:id="references-backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>References</title>
+    <biblio type="raw" xml:id="biblio-cyber-nsf">
+        National Science Foundation,
+        <title>About Advanced Cyberinfrastructure</title>.
+        <url href="https://www.nsf.gov/cise/oac/about.jsp"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-cyber-educause">
+        EDUCAUSE Campus Cyberinfrastructure Working Group and Coalition for Academic Scientific Computation,
+        <title>Developing a Coherent Cyberinfrastructure from
+        Local Campus to National Facilities: Challenges and
+        Strategies</title>,
+        <date>2009</date>.
+        <url href="https://library.educause.edu/-/media/files/library/2009/4/epo0906-pdf.pdf"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-mathdb">
+        Katja Berčič,
+        <title>Catalogue of Mathematical Datasets</title>.
+        <url href="https://mathdb.mathhub.info/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-cyber-researchgov">
+        Research.gov,
+        <title>Shared Cyberinfrastructure</title>.
+        <url href="https://www.research.gov/research-portal/appmanager/base/desktop?_nfpb=true&amp;_windowLabel=sandiMenu_10_1_1_1_1_1_1&amp;_urlType=action&amp;wlpsandiMenu_10_1_1_1_1_1_1_id=MTS%3A%3AKTL4JTCZF&amp;wlpsandiMenu_10_1_1_1_1_1_1_action=selectResearchAsset"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-high-compute">
+        D. H. Bailey, D. Broadhurst, Y. Hida, Xiaoye S. Li and B. Thompson,
+        <title>High Performance Computing Meets Experimental Mathematics</title>.
+        <journal>Proceedings of the 2002 ACM/IEEE Conference on Supercomputing</journal>,
+        <date>2002</date>,
+        <volume>SC '02</volume>.
+        <url href="https://doi.org/10.1109/SC.2002.10060"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-pibase">
+        James Dabbs,
+        <title><m>\pi</m>-Base</title>.
+        <url href="https://topology.pi-base.org/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-atlas">
+        Dmitri Shakhmatov and Stephen Watson,
+        <title>Topology Atlas</title>.
+        <url href="http://at.yorku.ca/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-mathse-search">
+        <title>Search results for url topology.jdabbs.com on Math.Stackexchange</title>.
+        <url href="https://math.stackexchange.com/search?q=url%3A%22topology.jdabbs.com%22"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-mo-search">
+        <title>Search results for url topology.jdabbs.com on MathOverflow</title>.
+        <url href="https://mathoverflow.net/search?q=url%3A%22topology.jdabbs.com%22"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-prez">
+        The White House,
+        <title>Presidential Decision Directive NSC-63</title>,
+        <date>1998</date>.
+        <url href="https://fas.org/irp/offdocs/pdd/pdd-63.htm"/>.
+        <!-- <note xml:id="note-judson-AATA">
+        <p>
+            Another online, open-source offering.
+        </p>
+        </note> -->
+    </biblio>
+    <!-- <biblio type="raw" xml:id="biblio-lay-article">
+        David C. Lay,
+        <title>Subspaces and Echelon Forms</title>.
+        <journal>The College Mathematics Journal</journal>,
+        <date>January 1993</date>,
+        <volume>24</volume>
+        <number>1</number>,
+        57<ndash />62.
+    </biblio> -->
+</references>

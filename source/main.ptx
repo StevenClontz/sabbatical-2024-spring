@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <macros>\newcommand{\foo}{b^{ar}}</macros>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+  <article xml:id="sabbatical-proposal">
+    <title>Proposal for Sabbatical Leave</title>
+    <subtitle>FOSS Cyberinfrastructure for Mathematics Research and Undergraduate Mathematics Education</subtitle>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Steven Clontz</personname>
+          <department>Department of Mathematics and Statistics</department>
+          <institution>University of South Alabama</institution>
+        </author>
+        <date>2021 September</date>
+      </titlepage>
+      <abstract>
+        <p>
+NSF's Office of Advanced Cyberinfrastructure (OAC) <q>supports and coordinates the development,
+acquisition, and provision of state-of-the-art cyberinfrastructure resources, tools and services
+essential to the advancement and transformation of science and engineering</q>. In service of this
+mission, Dr. Clontz serves as co-PI on 
+<url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award 2011807</url>,
+responsible for the development of several technologies to support evidence-based pedagogies in
+undergraduate mathematics
+education. Likewise, Clontz previously received an internal Faculty Development Council grant to
+hire a student worker to audit and expand the
+<url href="https://topology.pi-base.org"><m>\pi</m>-Base database of topological spaces</url>
+for use in mathematics research.
+        </p>
+        <p>
+This proposal aims to leverage the momentum from these projects by allowing Clontz to spend one semester
+during the 2022-23 academic year collaborating with scholars across the country in the development of
+advanced free-and-open-source (FOSS) cyberinfrastructure for mathematics research and undergraduate
+mathematics education. The <url href="https://aimath.org">American Institute of Mathematics</url>
+will serve as Clontz's host for this sabbatical leave, and his collaborators will include steering committee
+chairs of two major topology research conferences, as well as a professional software engineer with a background
+in topology. In addition to software deliverables that will enhance mathematics research and education,
+this leave will be used to develop proposals for additional external funding from the National Science
+Foundation, produce traditional academic research in topology to be
+presented at conferences and published in peer-reviewed journals, and
+network with statewide magnet STEM high schools to promote the University to high-performing students.
+        </p>
+      </abstract>
+    </frontmatter>
+    <xi:include href="./background.ptx" />
+    <xi:include href="./activities.ptx" />
+    
+    <backmatter>
+    <xi:include href="./references.ptx" />
+    </backmatter>
+
+  </article>
+</pretext>

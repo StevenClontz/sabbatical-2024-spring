@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="activities" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Proposed Activities</title>
+  <introduction>
+    <p>Intro</p>
+  </introduction>
+  <subsection>
+    <title>FOSS Cyberinfrastructure for Mathematics Research</title>
+    <p>pi-base and atlas 2.0</p>
+  </subsection>
+  <subsection>
+    <title>FOSS Cyberinfrastructure for Mathematics Instruction and RUME</title>
+    <p>CheckIt, Scratchee, and SpaTeXt/PreTeXt</p>
+  </subsection>
+  <subsection>
+    <title>Grant-Seeking</title>
+    <p>Note appropriate NSF solicitations</p>
+  </subsection>
+  <subsection>
+    <title>Additional Activites</title>
+    <p>Continued research, MaPP, visiting ASMS/ASCTE</p>
+  </subsection>
+</section>
