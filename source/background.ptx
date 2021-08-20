@@ -44,7 +44,7 @@ the exploration of finite mathematical spaces <xref ref="biblio-high-compute"/>.
     <p>
 But perhaps underrated are the systems used by mathematicians for sharing and collaborating
 bleeding-edge advancements with the community of research. The mathematics written on paper
-or the chalkboard cannot travel far on its own; generally, mathematicians use software such
+or the chalkboard cannot travel far on their own; generally, mathematicians use software such
 as LaTeX to typeset proofs and formulas for distribution in PDF format. Then, rather than asking
 colleagues from across the country to physically visit their office computer, the researcher uses
 technologies such as email, a personal website, and/or a preprint server to post their work
@@ -82,8 +82,8 @@ done well to meet this need both for small meetings and large conferences. But o
 large conferences, whether in-person or otherwise, is not easily done without the use of technology.
 Historically, the <pubtitle>Topology Atlas</pubtitle> <xref ref="biblio-atlas"/> met this need,
 not just in topology but in many other areas of mathematics as well,
-but this abstract and conference scheduling service was ended in 2020 following twenty-five years in
-production. Its shuttering has left a void that creates inefficiencies for researchers,
+but this abstract and conference scheduling platform was ended in 2020 following twenty-five years in
+service. Its shuttering has left a void that creates inefficiencies for researchers,
 distracting from their core work.
     </p>
   </subsection>
@@ -113,7 +113,10 @@ to LaTeX/PDF for printing, but also published to the web as practice exercises, 
 LMSes including Canvas, D2L, and Moodle. The second is
 <url href="https://scratchee.clontz.org">Scratchee</url>, a virtualization of the
 Instant Feedback Assessment Technique (IF-AT) <xref ref="biblio-ifat"/> integral to
-Team-Based Learning. Critically, these software applications are developed to be used completely within
+Team-Based Learning. In addition, Clontz serves as collaborator on the <url href="https://pretextbook.org">PreTeXt</url>
+project, developing a user-friendly platform for authoring the PreTeXt markup XML language that produces
+both PDF and accessible HTML textbooks and research manuscripts from the same source.
+Critically, these software applications are developed to be used completely within
 a web browser on nearly any device, without any need for downloads or installations.
     </p>
     <p>

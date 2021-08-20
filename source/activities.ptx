@@ -2,11 +2,57 @@
 <section xml:id="activities" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Proposed Activities</title>
   <introduction>
-    <p>Intro</p>
+    <p>
+Sabbatical leave is requested for either Fall 2022 or Spring 2023. While
+Fall 2022 is preferred, and further delay of these proposed activities will
+lessen their broader impact, the applicant recognizes the need for flexibility
+in reallocating duties to the department. Either way, it's anticipated that
+these activities will extend into the adjacent summer semester, modulo Clontz's
+obligations to ongoing grant activity.
+    </p>
+    <p>
+The American Institute of Mathematics located in San Jose, California will serve
+as host for this sabbatical, connecting Clontz with other likeminded scholars
+engaged in the work of developing cyberinfrastructure for mathematics research
+and education. Current university guidance notes the risk of catching or spreading
+COVID-19 during travel. As such, while it is expected that some of the activities
+described will be performed in-person, all of the work is able to be done virtually
+via AIM's online Sococo workspace used regularly by dozens of mathematicians working on
+OER textbooks and technologies. Any necessary travel will be covered by either
+collaborators' grants or the applicant's current NSF funding; in addition, further
+funding will be requested in an upcoming NSF proposal focused specifically on
+cyberinfrastructure develoment (see below).
+    </p>
   </introduction>
   <subsection>
     <title>FOSS Cyberinfrastructure for Mathematics Research</title>
-    <p>pi-base and atlas 2.0</p>
+    <p>
+A current shortcoming of the pi-Base application is lack of tooling to preview
+work on the actual web application (or a facsimile thereof) by both contributors
+and referees. Instead, numerical IDs for each object in the database must be manually
+looked up and compared across several files, and this process allows plenty of
+room for human error. The main development goal for the pi-Base is to add functionality
+via GitHub Actions that will automatically provide an online preview of how individual
+contributions will change the overall database, which can be used by both contributors
+and referees to catch such mistakes before they are published to the public. Such features
+will also assist new contributors in making improvements by providing a more graphical
+user interface compared to the current editing of text files.
+    </p>
+    <p>
+To begin to make these improvements, Clontz will meet with the pi-Base's lead developer
+James Dabbs for one week at the beginning of the sabbatical
+for a focused development sprint. During this visit, Clontz will give a talk to
+a Javascript development organization Dabbs belongs to on the use of Javascript programming
+in academia. Note that the pi-Base is developed
+using the same technologies (particularly, the Svelte Javascript framework) as
+Clontz's CheckIt and Scratchee projects, and is used by Dabbs in his daily work as a 
+software engineer. As such, this meeting will have cascading effects across the rest
+of the work performed throughout the sabbatical, by providing time for Clontz to pick up
+more advanced Javascript programming techniques fueled by best industry practices.
+In addition, this training will enable Clontz to serve not only as the pi-Base's lead
+mathematical editor, but also as a co-developer of the platform itself, ensuring that an
+academic researcher is capable of maintaining the platform in case of future technical issues.
+    </p>
   </subsection>
   <subsection>
     <title>FOSS Cyberinfrastructure for Mathematics Instruction and RUME</title>

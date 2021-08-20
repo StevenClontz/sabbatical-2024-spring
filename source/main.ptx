@@ -47,6 +47,7 @@ network with statewide magnet STEM high schools to promote the University to hig
     </frontmatter>
     <xi:include href="./background.ptx" />
     <xi:include href="./activities.ptx" />
+    <xi:include href="./outcomes.ptx" />
     
     <backmatter>
     <xi:include href="./references.ptx" />
