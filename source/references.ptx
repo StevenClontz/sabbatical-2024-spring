@@ -55,6 +55,18 @@
         <title>Canvas LMS on GitHub</title>.
         <url href="https://github.com/instructure/canvas-lms"/>.
     </biblio>
+    <biblio type="raw" xml:id="biblio-braille">
+        American Institute of Mathematics,
+        <title>Math that feels good:
+            Creating learning resources for blind students</title>.
+        <url href="https://aimath.org/aimnews/braille_full/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-repo">
+        Steven Clontz,
+        <title>StevenClontz/sabbatical-proposal-2022</title>.
+        <journal>GitHub</journal>.
+        <url href="https://github.com/StevenClontz/sabbatical-proposal-2022"/>.
+    </biblio>
     <biblio type="raw" xml:id="biblio-logistics">
         Shadle, S.E., Marker, A. &amp; Earl, B,
         <title>Faculty drivers and barriers: laying the groundwork for undergraduate STEM education reform in academic departments</title>.

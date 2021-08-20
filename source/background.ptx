@@ -106,18 +106,21 @@ from any device with a web browser.
     </p>
     <p>
 Partially supported by NSF DUE 2011807, Clontz has developed two software applications to support mathematics
-instruction and Team-Based Learning, the focus of the University's most recent Quality Enhancement Project. 
+instruction and Team-Based Inquiry Learning (TBIL), a flavor of Team-Based Learning that was the focus of the
+University's most recent Quality Enhancement Project. 
 The first is the <url href="https://checkit.clontz.org">CheckIt Platform</url>, allowing instructors to
 write minimal code to generate randomized mathematics exercises that can be automatically exported not only
 to LaTeX/PDF for printing, but also published to the web as practice exercises, and to
 LMSes including Canvas, D2L, and Moodle. The second is
 <url href="https://scratchee.clontz.org">Scratchee</url>, a virtualization of the
 Instant Feedback Assessment Technique (IF-AT) <xref ref="biblio-ifat"/> integral to
-Team-Based Learning. In addition, Clontz serves as collaborator on the <url href="https://pretextbook.org">PreTeXt</url>
-project, developing a user-friendly platform for authoring the PreTeXt markup XML language that produces
-both PDF and accessible HTML textbooks and research manuscripts from the same source.
-Critically, these software applications are developed to be used completely within
-a web browser on nearly any device, without any need for downloads or installations.
+TBIL. In addition, Clontz serves as collaborator on the <url href="https://pretextbook.org">PreTeXt</url>
+project, developing a user-friendly platform for authoring the PreTeXt markup language that produces
+both PDF and accessible HTML documents (including textbooks and research manuscripts) from the same source,
+including this proposal <xref ref="biblio-repo"/>.
+Furthermore, docuemnts authored in PreTeXt can also be automatically published as Braille
+<xref ref="biblio-braille"/>, an uncommon feature for commercial textbooks, much less free Open Educational
+Resources (OER), providing access to mathematics often out of reach to blind students.
     </p>
     <p>
 In addition to supporting mathematics instruction directly, the CheckIt Platform is also being used
