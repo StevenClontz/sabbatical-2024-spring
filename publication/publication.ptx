@@ -4,4 +4,5 @@
     <source webwork-problems="../generated-assets/webwork/webwork-representations.ptx">
         <directories external="../assets" generated="../generated-assets"/>
     </source>
+    <html><css colors='blue_red'/></html>
 </publication>
