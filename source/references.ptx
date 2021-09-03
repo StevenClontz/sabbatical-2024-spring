@@ -26,10 +26,30 @@
         <volume>SC '02</volume>.
         <url href="https://doi.org/10.1109/SC.2002.10060"/>.
     </biblio>
+    <biblio type="raw" xml:id="biblio-pretext">
+        Rob Beezer,
+        <title>PreTeXt</title>.
+        <url href="https://pretextbook.org/"/>.
+    </biblio>
     <biblio type="raw" xml:id="biblio-mathdb">
         Katja Berčič,
         <title>Catalogue of Mathematical Datasets</title>.
         <url href="https://mathdb.mathhub.info/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-checkit">
+        Steven Clontz,
+        <title>Checkit</title>.
+        <url href="https://checkit.clontz.org/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-ghclontz">
+        Steven Clontz,
+        <title>GitHub Repositories</title>.
+        <url href="https://github.com/StevenClontz/"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-scratchee">
+        Steven Clontz,
+        <title>Scratchee</title>.
+        <url href="https://scratchee.clontz.org/"/>.
     </biblio>
     <biblio type="raw" xml:id="biblio-repo">
         Steven Clontz,

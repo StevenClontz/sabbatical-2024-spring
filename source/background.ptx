@@ -108,14 +108,14 @@ from any device with a web browser.
 Partially supported by NSF DUE 2011807, Clontz has developed two software applications to support mathematics
 instruction and Team-Based Inquiry Learning (TBIL), a flavor of Team-Based Learning that was the focus of the
 University's most recent Quality Enhancement Project. 
-The first is the <url href="https://checkit.clontz.org">CheckIt Platform</url>, allowing instructors to
+The first is the CheckIt Platform <xref ref="biblio-checkit"/>, allowing instructors to
 write minimal code to generate randomized mathematics exercises that can be automatically exported not only
 to LaTeX/PDF for printing, but also published to the web as practice exercises, and to
-LMSes including Canvas, D2L, and Moodle. The second is
-<url href="https://scratchee.clontz.org">Scratchee</url>, a virtualization of the
-Instant Feedback Assessment Technique (IF-AT) <xref ref="biblio-ifat"/> integral to
-TBIL. In addition, Clontz serves as collaborator on the <url href="https://pretextbook.org">PreTeXt</url>
-project, developing a user-friendly platform for authoring the PreTeXt markup language that produces
+LMSes including Canvas, D2L, and Moodle. The second is Scratchee <xref ref="biblio-scratchee"/>,
+a virtualization of the Instant Feedback Assessment Technique (IF-AT) <xref ref="biblio-ifat"/> integral to
+TBIL. In addition, Clontz serves as collaborator on the PreTeXt
+project <xref ref="biblio-pretext"/>, 
+developing a user-friendly platform for authoring the PreTeXt markup language that produces
 both PDF and accessible HTML documents (including textbooks and research manuscripts) from the same source,
 including this proposal <xref ref="biblio-repo"/>.
 Furthermore, docuemnts authored in PreTeXt can also be automatically published as Braille
@@ -155,9 +155,8 @@ products it funds be FOSS. It's worth clarifying what is meant by this.
     </p>
     <p>
 <term>Open-source software</term> is most easily defined. All code written as part of this project will
-be made available to the public via Clontz's GitHub repository at
-<url href="https://github.com/StevenClontz"/> (or other GitHub repositories as appropriate).
-This means that anyone will be able to obtain
+be made available to the public via Clontz's GitHub <xref ref="biblio-ghclontz"/>
+(or other publicly available repositories as appropriate). This means that anyone will be able to obtain
 a copy of any software developed during this sabbatical, use this software to benefit their
 research or instruction, and contribute corrections or improvements to the codebase to
 benefit others.
