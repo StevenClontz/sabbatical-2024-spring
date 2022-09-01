@@ -3,13 +3,8 @@
   <title>Proposed Activities</title>
   <introduction>
     <p>
-Sabbatical leave is requested for Fall 2022. While further delay of these
-proposed activities will
-lessen their broader impact, the applicant recognizes the need for flexibility
-in reallocating duties to the department, and thus Spring 2023 is also
-acceptable if necessary. Either way, it's anticipated that
-these activities will extend into the adjacent summer semester, modulo Clontz's
-obligations to ongoing grant activity.
+Sabbatical leave is requested for Spring 2024. This timing is requested to
+complement Clontz's anticipated NSF-funded release from teaching duties in Fall 2023.
     </p>
     <p>
 The American Institute of Mathematics (AIM) located in San Jose, California will serve
@@ -17,23 +12,11 @@ as host for this sabbatical, connecting Clontz with other likeminded scholars
 engaged in the work of developing cyberinfrastructure for mathematics research
 and education. To support these activities, AIM has offered Clontz office space
 for the duration of the sabbatical, as well as funding to cover travel to San Jose and
-local expenses. Most of the collaborative work planned 
-is alternatively able to be done virtually as needed via AIM's online collaboration platform developed
-during the COVID-19 pandemic, so sabbatical activities may be performed independent
-of public health concerns related to travel.
-    </p>
-    <p>
-The activities proposed involve the development of several software packages,
-preparation of grant proposals, traditional mathematics research, and more. Given the rapid
-development of such technologies and research, and the length of time between
-this application and the start of the sabbatical, it's difficult to pinpoint the
-precise work that will best fit a Fall 2022 or Spring 2023 semester leave. Therefore,
-this section describes a wide range of activities to be undertaken between now and the
-end of the 2022-23 academic year, assuming one semester of sabbatical.
+local expenses.
     </p>
   </introduction>
   <subsection>
-    <title>FOSS Cyberinfrastructure for Mathematics Research</title>
+    <title>Cyberinfrastructure for Mathematics Research</title>
     <p>
 A current shortcoming of the pi-Base application is lack of tooling to preview
 work on the actual web application (or a facsimile thereof) by both contributors
@@ -47,11 +30,9 @@ will also assist new contributors in making improvements by providing a more gra
 user interface compared to the current editing of text files.
     </p>
     <p>
-To begin to make these improvements, Clontz will meet with the pi-Base's lead developer
+To begin to make these improvements, Clontz will collaborate with the pi-Base's lead developer
 James Dabbs for one week at the beginning of the sabbatical
-for a focused development sprint. During this visit, Clontz will give a talk to
-a Javascript development organization Dabbs belongs to on the use of Javascript programming
-in academia. Note that the pi-Base is developed
+for a focused development sprint. Note that the pi-Base is developed
 using the same technologies (particularly, the Svelte Javascript framework) as
 Clontz's CheckIt and Scratchee projects, and is used by Dabbs in his daily work as a 
 software engineer. As such, this meeting will have cascading effects across the rest
@@ -62,29 +43,36 @@ mathematical editor, but also as a co-developer of the platform itself, ensuring
 academic researcher is capable of maintaining the platform in case of future technical issues.
     </p>
     <p>
-Additionally, Clontz will collaborate with the steering committees of two major mathematics
-conferences, the Spring Topology and Dynamics Conference and the Summer Conference on Topology
-and its Applications, to begin development of a replacement to the now-defunct
-Topology Atlas platform. While some features of the Atlas (such as forums for posing and
-answering questions on mathematical research) are well-replicated by existing solutions
-(such as MathOverflow), there remains no elegant solution for handling abstract submissions
-and scheduling, so Clontz's work will focus on that vacuum.
-Some of this functionality has been roughly imitated through the use of Google
-Apps; it's anticipated that these can be wired together by designing new Javascript
-programs that recreate the automated workflows previously provided by the Atlas. 
+Additionally, Clontz will use time granted by sabbatical to become fluent in the Lean
+proof assistant language, and contribute his expertise in general topology to the <c>mathlib</c>
+library. Collaborating with Jim Fowler at Ohio State University, Clontz will also work to integrate
+the <m>\pi</m>-Base and <c>mathlib</c> databases to connect computer-verified results in
+mathematics to an easily-accessible semantic search enginer for use by researchers.
     </p>
   </subsection>
   <subsection>
-    <title>FOSS Cyberinfrastructure for Mathematics Instruction and RUME</title>
+    <title>Cyberinfrastructure for STEM Higher Education</title>
+    <p>
+Throughout 2023, Clontz will be working on the development of an Open Source Ecosystem
+for PreTeXt software products used to develop Open Educational Resources for 
+STEM higher education classrooms. In particular, Clontz's NSF-funded teaching release in
+Fall 2023 will allow him to hold virtual office hours for community members,
+iterate on security infrastructure for PreTeXt products, and develop a Software-as-a-Service
+solution for authoring, building, and deploying PreTeXT documents in the cloud.
+A $1.5M Phase II proposal will be submitted to the NSF around October 2023; sabbatical release in
+Spring 2024 will facilitate the continued development of this Open-Source Ecosystem while this
+proposal is under review.
+    </p>
     <p>
 After preliminary development for two years for Clontz's personal use, the CheckIt Platform
 received its first public release in June 2021. Two dozen instructors participated
-in an introductory authoring workshop, and as of August 2021 randomized exercise banks have
+in an introductory authoring workshop, and as of August 2022 randomized exercise banks have
 be published or are in development for calculus, linear algebra, differential equations,
-introductory statistics, quantitative reasoning, and mathematics for liberal arts courses,
-many of which will be used to facilitate Fall 2021 instruction.
+introductory statistics, quantitative reasoning, introduction to proofs,
+and mathematics for liberal arts courses,
+and were been used in classrooms across the country throughout 2021 and 2022.
 This quick evidence of productivity witnesses the utility of the platform, and it has
-also generated many requests for new features and bugfixes.
+also generated many requests for new features and bugfixes to be worked on during this sabbatical.
     </p>
     <p>
 An alpha version of the Scratchee app for creating and sharing virtualized scratch cards
@@ -92,40 +80,20 @@ for IF-AT was released in late July 2021. This prototype was created in response
 developments related to Clontz's NSF grant for supporting Team-Based Inquiry Learning; while
 physical IF-AT cards are not incredibly expensive, they introduce logistical friction for implementing
 TBIL (ordering the cards, waiting for shipment, aligning multiple-choice questions with the
-predetermined correct responses printed on the card). Multiple TBIL instructors are using
-Scratchee in Fall 2021; their experiences will be used to determine the necessary enhancements
+predetermined correct responses printed on the card). Multiple TBIL instructors have used
+Scratchee throughout 2021 and 2022; their experiences will be used to determine the necessary enhancements
 required for a public release of the platform for the broader Team-Based Learning community.
-    </p>
-    <p>
-Beginning in Summer 2020, Clontz partnered with Prof. Oscar Levin to develop PreTeXt-CLI,
-a command-line user interface for quickly generating PreTeXt template projects, authoring new materials,
-and publishing them to freely available internet hosts. AIM provided support for Clontz and Levin to
-continue this work in Summer 2021, and in August 2021 the PreTeXt-CLI became the canonical interface
-for authoring textbooks and research manuscripts in PreTeXt. The CLI is significantly simpler to
-install and use compared with previous tools; however, more work remains to integrate the tool
-with the VS Code graphical web application, with the ultimate goal of creating
-an elegant web browser-based authoring experience akin to using Google Docs or Overleaf, but
-producing documents accessible by both sighted and blind students. Additionally, there have
-been requests to directly integrate the CheckIt Platform into the PreTeXt ecosystem, allowing
-textbook authors to directly create randomized exercises for the end of each section.
     </p>
   </subsection>
   <subsection>
-    <title>External Grant-Seeking</title>
+    <title>External Grant Activity</title>
     <p>
-The work described above is well-aligned with two specific NSF solicistations. The first
-is Improving Undergraduate STEM Education: Education and Human Resources <xref ref="biblio-iuse"/>.
-Clontz is currently
-funded as part of an IUSE program on Team-Based Inquiry Learning, and served as a consultant
-for another IUSE program studying the use of open-source textbooks in undergraduate mathematics
-education,
-particularly those authored in PreTeXt. In January 2022, Clontz will submit a new IUSE
-proposal focusing on the cyberinfrastructure needs of these projects and related RUME work.
-If this grant is not funded, sabbatical leave would be very useful to revise and resubmit in
-Spring 2023, based upon reviews from the NSF.
+The primary external mechanism used to fund proposed activities related to the infrastructure of
+STEM higher education is the NSF POSE solicitation. As noted, a $1.5M two-year Phase II proposal will be submitted in
+Fall 2023, to begin following the requested Spring 2024 sabbatical.
     </p>
     <p>
-The other is Research Experiences for Undergraduates (REU) <xref ref="biblio-reu"/>.
+Another relevant solicitation is Research Experiences for Undergraduates (REU) <xref ref="biblio-reu"/>.
 In particular, the research data used as the basis for the pi-Base was originally developed
 as part of an NSF-funded REU <xref ref="biblio-steen"/>, which resulted in the reference text
 <pubtitle>Counterexamples in Topology</pubtitle>. In this spirit, a new REU program would
@@ -133,15 +101,7 @@ allow students to extend this work using the pi-Base, expanding its coverage of 
 and making the platform more useful by researchers. Additionally, unlike some traditional
 mathematics REUs, students would gain knowledge of the cyberinfrastructure powering the
 pi-Base platform, and relevants skills that would extend to careers across STEM.
-This proposal is anticipated to be submitted in July 2022; sabbatical leave in Fall 2022 would
-free Clontz's time from usual sememster preparations to invest in this proposal.
-    </p>
-    <p>
-Clontz is also engaged with additional NSF grant-writing in association with the
-Mathematical Puzzle Programs outreach organization, described below. He served as co-PI
-for an Advancing Informal STEM Learning (AISL) <xref ref="biblio-aisl"/> proposal
-submitted in January 2021; while not funded, the proposal received promising reviews,
-and a new proposal will be submitted in 2022.
+This proposal is anticipated to be submitted in July 2024, developed as part of a Spring 2024 sabbatical.
     </p>
   </subsection>
   <subsection>
@@ -169,21 +129,6 @@ pi-Base, as finding literature on dimension in the context of non-metrizable spa
 is very difficult when only using search engines and chasing citations, so this work
 will also be incorporated into the pi-Base as it is completed to assist future
 scholars.
-    </p>
-    <p>
-Clontz is also heavily involved in mathematics outreach. He serves as director of
-Mathematical Puzzle Programs, which organizes fun escape-room-like experiences
-for the general public at nine college campuses across the country,
-whose puzzles incorporate contemporary mathematics research.
-Likewise, Clontz previously consulted with the new Alabama School of Cyber Technology
-and Engineering (ASCTE) statewide magnet high school in Huntsville to develop their
-technology-integrated
-freshman mathematics curriculum, and often collaborates with the
-Alabama School of Mathematics and Science (ASMS) statewide
-magnet high school local to Mobile as well. Sabbatical leave will give Clontz increased
-flexibility to support MaPP activities across the country, as well as visit ASCTE and
-ASMS to provide support integrating modern technologies into their mathematics curricula
-and promote the University to their talented students.
     </p>
   </subsection>
 </section>
