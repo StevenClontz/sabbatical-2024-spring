@@ -6,7 +6,7 @@
   </docinfo>
   <article xml:id="sabbatical-proposal">
     <title>Proposal for Sabbatical Leave</title>
-    <subtitle>FOSS Cyberinfrastructure for Mathematics Research and Undergraduate Mathematics Education</subtitle>
+    <subtitle>Cyberinfrastructure for Mathematics Research and STEM Higher Education</subtitle>
     <frontmatter>
       <titlepage>
         <author>
@@ -14,33 +14,30 @@
           <department>Department of Mathematics and Statistics</department>
           <institution>University of South Alabama</institution>
         </author>
-        <date>2021 September</date>
+        <date>2022 September</date>
       </titlepage>
       <abstract>
         <p>
 NSF's Office of Advanced Cyberinfrastructure (OAC) <q>supports and coordinates the development,
 acquisition, and provision of state-of-the-art cyberinfrastructure resources, tools and services
-essential to the advancement and transformation of science and engineering</q>. In service of this
-mission, Dr. Clontz serves as co-PI on NSF DUE Award 2011807 <xref ref="biblio-tbil-award"/>,
+essential to the advancement and transformation of science and engineering</q>, and the NSF has doubled-down
+on this commitment with the recent establishment of its <q>Technology, Innovation and Partnerships</q> directorate,
+the first new NSF directorate in over 30 years. In service of this
+mission, Dr. Clontz serves as co-PI on NSF DUE Award 2011807,
 responsible for the development of several technologies to support evidence-based pedagogies in
-undergraduate mathematics
-education. Likewise, Clontz previously received an internal Faculty Development Council grant to
-hire a student worker to audit and expand the
-<pubtitle><m>\pi</m>-Base</pubtitle> <xref ref="biblio-pibase"/> database of topological spaces
-for use in mathematics research.
+undergraduate mathematics education, and his NSF Proposal 2230153 as PI to develop an Open-Source Ecosystem
+fostering technologies used in the development of STEM higher-education Open Educational Resources
+has been recommended for funding beginning in 2023.
         </p>
         <p>
-This proposal requests to leverage the momentum from these projects by allowing Clontz to spend one semester
-during the 2022-23 academic year collaborating with scholars across the country in the development of
-advanced free-and-open-source (FOSS) cyberinfrastructure for mathematics research and undergraduate
-mathematics education. The American Institute of Mathematics <xref ref="biblio-aim"/>
-will serve as Clontz's host for this sabbatical leave, and his collaborators will include steering committee
-chairs of two major topology research conferences, as well as a professional software engineer with a background
-in topology. In addition to software deliverables that will enhance mathematics research and education,
-this leave will be used to develop proposals for additional external funding from the National Science
-Foundation, produce traditional academic research in topology to be
-presented at conferences and published in peer-reviewed journals, and
-network with statewide magnet STEM high schools to promote the University to high-performing students.
+This proposal requests to leverage the momentum from these projects by allowing Clontz to spend Spring 2024
+collaborating with scholars across the country in the development of
+advanced free-and-open-source (FOSS) cyberinfrastructure for mathematics research and STEM
+higher education. The American Institute of Mathematics
+will serve as Clontz's host for this sabbatical leave.
+The deliverables of this sabbatical will include multiple software products benefiting mathematics research
+and STEM higher education, enhancement of the human infrastructure surrounding these products, and
+the continued development of Clontz's ongoing research in general topology.
         </p>
       </abstract>
     </frontmatter>

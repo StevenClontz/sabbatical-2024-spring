@@ -36,6 +36,13 @@
         <title>Catalogue of Mathematical Datasets</title>.
         <url href="https://mathdb.mathhub.info/"/>.
     </biblio>
+    <biblio type="raw" xml:id="biblio-buzzard">
+        Kevin Buzzard,
+        <title>What is the point of computers? A question for pure mathematicians</title>.
+        <journal>arXiv</journal>,
+        <date>2021</date>,
+        <url href="https://arxiv.org/abs/2112.11598"/>.
+    </biblio>
     <biblio type="raw" xml:id="biblio-checkit">
         Steven Clontz,
         <title>Checkit</title>.
@@ -53,9 +60,9 @@
     </biblio>
     <biblio type="raw" xml:id="biblio-repo">
         Steven Clontz,
-        <title>StevenClontz/sabbatical-proposal-2022</title>.
+        <title>StevenClontz/sabbatical-2024-spring</title>.
         <journal>GitHub</journal>.
-        <url href="https://github.com/StevenClontz/sabbatical-proposal-2022"/>.
+        <url href="https://github.com/StevenClontz/sabbatical-2024-spring"/>.
     </biblio>
     <biblio type="raw" xml:id="biblio-ifat">
         S.H. Cotner, B.A. Fall, S.M. Wick, J.D. Walker, &amp; P.M. Baepler,
@@ -95,6 +102,11 @@
         <title>Canvas LMS on GitHub</title>.
         <url href="https://github.com/instructure/canvas-lms"/>.
     </biblio>
+    <biblio type="raw" xml:id="biblio-mathlib">
+        Lean Community,
+        <title>mathlib</title>.
+        <url href="https://github.com/leanprover-community/mathlib"/>.
+    </biblio>
     <biblio type="raw" xml:id="biblio-tbil-award">
         Andrew Lewis, Shiladitya Chaudhury, Steven Clontz, Julie Estis, &amp;
             Christopher Parrish,
@@ -103,6 +115,11 @@
             Team-Based Inquiry Learning</title>.
         <journal>National Science Foundation</journal>.
         <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-lean">
+        Microsoft Research,
+        <title>Lean</title>.
+        <url href="https://leanprover.github.io/"/>.
     </biblio>
     <biblio type="raw" xml:id="biblio-cyber-nsf">
         National Science Foundation,
@@ -120,10 +137,20 @@
             Human Resources (IUSE: EHR)</title>.
         <url href="https://www.nsf.gov/pubs/2021/nsf21579/nsf21579.htm"/>.
     </biblio>
+    <biblio type="raw" xml:id="biblio-pose">
+        National Science Foundation,
+        <title>Pathways to Enable Open-Source Ecosystems (POSE)</title>.
+        <url href="https://beta.nsf.gov/funding/opportunities/pathways-enable-open-source-ecosystems-pose"/>.
+    </biblio>
     <biblio type="raw" xml:id="biblio-reu">
         National Science Foundation,
         <title>Research Experiences for Undergraduates (REU)</title>.
         <url href="https://www.nsf.gov/pubs/2019/nsf19582/nsf19582.htm"/>.
+    </biblio>
+    <biblio type="raw" xml:id="biblio-tip-announce">
+        National Science Foundation,
+        <title>NSF establishes new Directorate for Technology, Innovation and Partnerships</title>.
+        <url href="https://beta.nsf.gov/news/nsf-establishes-new-directorate-technology-innovation-and-partnerships"/>.
     </biblio>
     <biblio type="raw" xml:id="biblio-cyber-researchgov">
         Research.gov,

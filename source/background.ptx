@@ -30,6 +30,13 @@ and digital access to research equipment and instrumentation <em>as well as educ
 <xref ref="biblio-cyber-researchgov"/>
     </p>
     </blockquote>
+    <p>
+The NSF has doubled-down
+on this commitment with the recent establishment of its <q>Technology, Innovation and Partnerships</q> directorate,
+the first new NSF directorate in over 30 years <xref ref="biblio-tip-announce"/>. Included in this
+directorate is the Pathways for Open Source Ecosystems solicitation <xref ref="biblio-pose"/> whose first call for
+proposals was due in May 2022.
+    </p>
   </introduction>
   <subsection>
     <title>Cyberinfrastructure in Mathematics Research</title>
@@ -75,16 +82,14 @@ discussion boards used by students and researchers alike <xref ref="biblio-maths
 experience (UX) of both contributing to the database and reviewing contributions.
     </p>
     <p>
-Another key element of cyberinfrastructure in mathematics research is the tooling used for
-creating both collaborative spaces and venues for dissemination, both virtually and in-person.
-Of course, recent events have exposed the utility of virtual collaborations, and tools such as Zoom and Sococo have
-done well to meet this need both for small meetings and large conferences. But organization of
-large conferences, whether in-person or otherwise, is not easily done without the use of technology.
-Historically, the <pubtitle>Topology Atlas</pubtitle> <xref ref="biblio-atlas"/> met this need,
-not just in topology but in many other areas of mathematics as well,
-but this abstract and conference scheduling platform was ended in 2020 following twenty-five years in
-service. Its shuttering has left a void that creates inefficiencies for researchers,
-distracting from their core work.
+In <xref ref="biblio-buzzard"/>, Buzzard points to the <m>\pi</m>-Base
+as an important example of how semantic search helps researchers more quickly and thorougly
+query the literature than standard search engines. Furthermore, he points to the increasing use of
+in computer-verified proof techniques as another emerging element of cyberinfrastructure in mathematics research.
+In particular, the Lean Prover <xref ref="biblio-lean"/> from Microsoft Research and the
+<c>mathlib</c> <xref ref="biblio-mathlib"/> library of mathematics written
+in Lean are becoming the de facto standard for formalization of mathematical results that can be verified
+by computer.
     </p>
   </subsection>
   <subsection>
@@ -130,21 +135,6 @@ as part of DUE 2011807, CheckIt-generated assessments will be used at several ca
 country. This allows instructors to administer as many versions of each exercise as needed for logistical
 purposes, while still ensuring that each version of the exercise measures exactly the same learning outcome.
     </p>
-    <p>
-Finally, the development of Checkit itself raises several interesting RUME questions that Clontz aims
-to explore in future collaborations with education researchers.
-For example, the process of authoring an exercise that aims to assess a
-particular learning outcome is much simpler than authoring an exercise template to be seeded with
-randomized data. In mathematics this is sometimes achievable by simply randomizing numerical elements of
-the exercise; for example, the template <c>{{a}}x + {{b}}y = {{c}}</c> expressing the standard equation
-of a line might be randomized to <m>4x+5y=-2</m>, <m>-3x+y=0</m>, and so on. However, what constraints
-are appropriate for this randomization to ensure it still serves as a valid assessment of a given
-outcome? Certainly, it seems unlikely that examples such as <m>531284127x-4512874312y=341893123</m>
-are necessary. But should the line occassionally be expressed in point-slope form <m>y=-mx+b</m> instead?
-And how can the stem of a question be randomized to ensure that students are synthesizing
-complete instructions, rather than only memorizing patterns developed from seeing solutions to similarly-generated
-exercises?
-    </p>
   </subsection>
   <subsection>
     <title>Free and Open-Source Software (FOSS)</title>
@@ -181,6 +171,13 @@ aren't intended to turn a profit, this debt can be kept minimal. To this end, mo
 of the software produced will either be written in HTML/Javascript, which can be freely hosted
 and run in any modern web browser, or will produce static such HTML/JS products for
 dissemination.
+    </p>
+    <p>
+Finally, NSF's recognition of the critical role FOSS products play in the cyberinfrastructure of
+STEM research is witnessed by solicitations such as its new POSE solicitation mentioned earlier.
+Clontz's $266K one-year Phase I proposal as PI to establish an Open-Source Ecosystem for the PreTeXt community
+has been recommended for funding by an NSF program officer as part of the inaugural round of awards, and will lead to a
+$1.5M two-year Phase II proposal to be submitted in Fall 2023.
     </p>
   </subsection>
 </section>
