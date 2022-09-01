@@ -66,7 +66,7 @@ the limitations of this approach.
     <p>
 One approach to overcoming this limitation is the development of databases of mathematical
 objects. As of writing, the <pubtitle>Catalogue of Mathematical Datasets</pubtitle> <xref ref="biblio-mathdb"/>
-enumerates <m>83</m> such tools. One of these is the
+enumerates <m>84</m> such tools. One of these is the
 <pubtitle><m>\pi</m>-Base</pubtitle> (a.k.a. pi-Base) community database of topological counterexamples
 <xref ref="biblio-pibase"/>, created by software engineer James Dabbs. Clontz joined the project in
 2017 to serve as its lead mathematical editor. In the beginning the database was treated similar to a wiki,
@@ -93,7 +93,7 @@ by computer.
     </p>
   </subsection>
   <subsection>
-    <title>Cyberinfrastructure in Mathematics Instruction and RUME</title>
+    <title>Cyberinfrastructure in STEM Higher Education</title>
     <p>
 Logistics are frequently a limiting factor in the adoption of evidence-based practices
 in instruction, particularly in undergraduate mathematics education <xref ref="biblio-logistics"/>.
