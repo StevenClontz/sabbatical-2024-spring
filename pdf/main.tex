@@ -1,0 +1,630 @@
+%********************************************%
+%*       Generated from PreTeXt source      *%
+%*       on 2022-09-06T20:59:28Z       *%
+%*   A recent stable commit (2022-07-01):   *%
+%* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
+%*                                          *%
+%*         https://pretextbook.org          *%
+%*                                          *%
+%********************************************%
+%% We elect to always write snapshot output into <job>.dep file
+\RequirePackage{snapshot}
+\documentclass[oneside,10pt,]{article}
+%% Custom Preamble Entries, early (use latex.preamble.early)
+%% Default LaTeX packages
+%%   1.  always employed (or nearly so) for some purpose, or
+%%   2.  a stylewriter may assume their presence
+\usepackage[margin=1in]{geometry}
+%% Some aspects of the preamble are conditional,
+%% the LaTeX engine is one such determinant
+\usepackage{ifthen}
+%% etoolbox has a variety of modern conveniences
+\usepackage{etoolbox}
+\usepackage{ifxetex,ifluatex}
+%% Raster graphics inclusion
+\usepackage{graphicx}
+%% Color support, xcolor package
+%% Always loaded, for: add/delete text, author tools
+%% Here, since tcolorbox loads tikz, and tikz loads xcolor
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}
+\usepackage{xcolor}
+%% begin: defined colors, via xcolor package, for styling
+%% end: defined colors, via xcolor package, for styling
+%% Colored boxes, and much more, though mostly styling
+%% skins library provides "enhanced" skin, employing tikzpicture
+%% boxes may be configured as "breakable" or "unbreakable"
+%% "raster" controls grids of boxes, aka side-by-side
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\tcbuselibrary{raster}
+%% We load some "stock" tcolorbox styles that we use a lot
+%% Placement here is provisional, there will be some color work also
+%% First, black on white, no border, transparent, but no assumption about titles
+\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=-0.3pt, frame empty,
+colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
+%% Second, bold title, run-in to text/paragraph/heading
+%% Space afterwards will be controlled by environment,
+%% independent of constructions of the tcb title
+%% Places \blocktitlefont onto many block titles
+\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper} }
+%% Spacing prior to each exercise, anywhere
+\tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
+%% Spacing prior to each block
+\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
+%% xparse allows the construction of more robust commands,
+%% this is a necessity for isolating styling and behavior
+%% The tcolorbox library of the same name loads the base library
+\tcbuselibrary{xparse}
+%% The tcolorbox library loads TikZ, its calc package is generally useful,
+%% and is necessary for some smaller documents that use partial tcolor boxes
+%% See:  https://github.com/PreTeXtBook/pretext/issues/1624
+\usetikzlibrary{calc}
+%% Hyperref should be here, but likes to be loaded late
+%%
+%% Inline math delimiters, \(, \), need to be robust
+%% 2016-01-31:  latexrelease.sty  supersedes  fixltx2e.sty
+%% If  latexrelease.sty  exists, bugfix is in kernel
+%% If not, bugfix is in  fixltx2e.sty
+%% See:  https://tug.org/TUGboat/tb36-3/tb114ltnews22.pdf
+%% and read "Fewer fragile commands" in distribution's  latexchanges.pdf
+\IfFileExists{latexrelease.sty}{}{\usepackage{fixltx2e}}
+%% Text height identically 9 inches, text width varies on point size
+%% See Bringhurst 2.1.1 on measure for recommendations
+%% 75 characters per line (count spaces, punctuation) is target
+%% which is the upper limit of Bringhurst's recommendations
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use latex.geometry)
+%% This LaTeX file may be compiled with pdflatex, xelatex, or lualatex executables
+%% LuaTeX is not explicitly supported, but we do accept additions from knowledgeable users
+%% The conditional below provides  pdflatex  specific configuration last
+%% begin: engine-specific capabilities
+\ifthenelse{\boolean{xetex} \or \boolean{luatex}}{%
+%% begin: xelatex and lualatex-specific default configuration
+\ifxetex\usepackage{xltxtra}\fi
+%% realscripts is the only part of xltxtra relevant to lualatex 
+\ifluatex\usepackage{realscripts}\fi
+%% end:   xelatex and lualatex-specific default configuration
+}{
+%% begin: pdflatex-specific default configuration
+%% We assume a PreTeXt XML source file may have Unicode characters
+%% and so we ask LaTeX to parse a UTF-8 encoded file
+%% This may work well for accented characters in Western language,
+%% but not with Greek, Asian languages, etc.
+%% When this is not good enough, switch to the  xelatex  engine
+%% where Unicode is better supported (encouraged, even)
+\usepackage[utf8]{inputenc}
+%% end: pdflatex-specific default configuration
+}
+%% end:   engine-specific capabilities
+%%
+%% Fonts.  Conditional on LaTex engine employed.
+%% Default Text Font: The Latin Modern fonts are
+%% "enhanced versions of the [original TeX] Computer Modern fonts."
+%% We use them as the default text font for PreTeXt output.
+%% Default Monospace font: Inconsolata (aka zi4)
+%% Sponsored by TUG: http://levien.com/type/myfonts/inconsolata.html
+%% Loaded for documents with intentional objects requiring monospace
+%% See package documentation for excellent instructions
+%% fontspec will work universally if we use filename to locate OTF files
+%% Loads the "upquote" package as needed, so we don't have to
+%% Upright quotes might come from the  textcomp  package, which we also use
+%% We employ the shapely \ell to match Google Font version
+%% pdflatex: "varl" package option produces shapely \ell
+%% pdflatex: "var0" package option produces plain zero (not used)
+%% pdflatex: "varqu" package option produces best upright quotes
+%% xelatex,lualatex: add OTF StylisticSet 1 for shapely \ell
+%% xelatex,lualatex: add OTF StylisticSet 2 for plain zero (not used)
+%% xelatex,lualatex: add OTF StylisticSet 3 for upright quotes
+%%
+%% Automatic Font Control
+%% Portions of a document, are, or may, be affected by defined commands
+%% These are perhaps more flexible when using  xelatex  rather than  pdflatex
+%% The following definitions are meant to be re-defined in a style, using \renewcommand
+%% They are scoped when employed (in a TeX group), and so should not be defined with an argument
+\newcommand{\divisionfont}{\relax}
+\newcommand{\blocktitlefont}{\relax}
+\newcommand{\contentsfont}{\relax}
+\newcommand{\pagefont}{\relax}
+\newcommand{\tabularfont}{\relax}
+\newcommand{\xreffont}{\relax}
+\newcommand{\titlepagefont}{\relax}
+%%
+\ifthenelse{\boolean{xetex} \or \boolean{luatex}}{%
+%% begin: font setup and configuration for use with xelatex
+%% Generally, xelatex is necessary for non-Western fonts
+%% fontspec package provides extensive control of system fonts,
+%% meaning *.otf (OpenType), and apparently *.ttf (TrueType)
+%% that live *outside* your TeX/MF tree, and are controlled by your *system*
+%% (it is possible that a TeX distribution will place fonts in a system location)
+%%
+%% The fontspec package is the best vehicle for using different fonts in  xelatex
+%% So we load it always, no matter what a publisher or style might want
+%%
+\usepackage{fontspec}
+%%
+%% begin: xelatex main font ("font-xelatex-main" template)
+%% Latin Modern Roman is the default font for xelatex and so is loaded with a TU encoding
+%% *in the format* so we can't touch it, only perhaps adjust it later
+%% in one of two ways (then known by NFSS names such as "lmr")
+%% (1) via NFSS with font family names such as "lmr" and "lmss"
+%% (2) via fontspec with commands like \setmainfont{Latin Modern Roman}
+%% The latter requires the font to be known at the system-level by its font name,
+%% but will give access to OTF font features through optional arguments
+%% https://tex.stackexchange.com/questions/470008/
+%% where-and-how-does-fontspec-sty-specify-the-default-font-latin-modern-roman
+%% http://tex.stackexchange.com/questions/115321
+%% /how-to-optimize-latin-modern-font-with-xelatex
+%%
+%% end:   xelatex main font ("font-xelatex-main" template)
+%% begin: xelatex mono font ("font-xelatex-mono" template)
+%% (conditional on non-trivial uses being present in source)
+\IfFontExistsTF{Inconsolatazi4-Regular.otf}{}{\GenericError{}{The font "Inconsolatazi4-Regular.otf" requested by PreTeXt output is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
+\IfFontExistsTF{Inconsolatazi4-Bold.otf}{}{\GenericError{}{The font "Inconsolatazi4-Bold.otf" requested by PreTeXt output is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
+\usepackage{zi4}
+\setmonofont[BoldFont=Inconsolatazi4-Bold.otf,StylisticSet={1,3}]{Inconsolatazi4-Regular.otf}
+%% end:   xelatex mono font ("font-xelatex-mono" template)
+%% begin: xelatex font adjustments ("font-xelatex-style" template)
+%% end:   xelatex font adjustments ("font-xelatex-style" template)
+%%
+%% Extensive support for other languages
+\usepackage{polyglossia}
+%% Set main/default language based on pretext/@xml:lang value
+%% document language code is "en-US", US English
+%% usmax variant has extra hypenation
+\setmainlanguage[variant=usmax]{english}
+%% Enable secondary languages based on discovery of @xml:lang values
+%% Enable fonts/scripts based on discovery of @xml:lang values
+%% Western languages should be ably covered by Latin Modern Roman
+%% end:   font setup and configuration for use with xelatex
+}{%
+%% begin: font setup and configuration for use with pdflatex
+%% begin: pdflatex main font ("font-pdflatex-main" template)
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+%% end:   pdflatex main font ("font-pdflatex-main" template)
+%% begin: pdflatex mono font ("font-pdflatex-mono" template)
+%% (conditional on non-trivial uses being present in source)
+\usepackage[varqu,varl]{inconsolata}
+%% end:   pdflatex mono font ("font-pdflatex-mono" template)
+%% begin: pdflatex font adjustments ("font-pdflatex-style" template)
+%% end:   pdflatex font adjustments ("font-pdflatex-style" template)
+%% end:   font setup and configuration for use with pdflatex
+}
+%% Micromanage spacing, etc.  The named "microtype-options"
+%% template may be employed to fine-tune package behavior
+\usepackage{microtype}
+%% Symbols, align environment, commutative diagrams, bracket-matrix
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amssymb}
+%% allow page breaks within display mathematics anywhere
+%% level 4 is maximally permissive
+%% this is exactly the opposite of AMSmath package philosophy
+%% there are per-display, and per-equation options to control this
+%% split, aligned, gathered, and alignedat are not affected
+\allowdisplaybreaks[4]
+%% allow more columns to a matrix
+%% can make this even bigger by overriding with  latex.preamble.late  processing option
+\setcounter{MaxMatrixCols}{30}
+%%
+%%
+%% Division Titles, and Page Headers/Footers
+%% titlesec package, loading "titleps" package cooperatively
+%% See code comments about the necessity and purpose of "explicit" option.
+%% The "newparttoc" option causes a consistent entry for parts in the ToC 
+%% file, but it is only effective if there is a \titleformat for \part.
+%% "pagestyles" loads the  titleps  package cooperatively.
+\usepackage[explicit, newparttoc, pagestyles]{titlesec}
+%% The companion titletoc package for the ToC.
+\usepackage{titletoc}
+%% begin: customizations of page styles via the modal "titleps-style" template
+%% Designed to use commands from the LaTeX "titleps" package
+\pagestyle{plain}
+%% end: customizations of page styles via the modal "titleps-style" template
+%%
+%% Create globally-available macros to be provided for style writers
+%% These are redefined for each occurence of each division
+\newcommand{\divisionnameptx}{\relax}%
+\newcommand{\titleptx}{\relax}%
+\newcommand{\subtitleptx}{\relax}%
+\newcommand{\shortitleptx}{\relax}%
+\newcommand{\authorsptx}{\relax}%
+\newcommand{\epigraphptx}{\relax}%
+%% Create environments for possible occurences of each division
+%% Environment for a PTX "section" at the level of a LaTeX "section"
+\NewDocumentEnvironment{sectionptx}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Section}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\section[{#3}]{#1}%
+\label{#6}%
+}{}%
+%% Environment for a PTX "subsection" at the level of a LaTeX "subsection"
+\NewDocumentEnvironment{subsectionptx}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Subsection}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\subsection[{#3}]{#1}%
+\label{#6}%
+}{}%
+%% Environment for a PTX "references" at the level of a LaTeX "section"
+\NewDocumentEnvironment{references-section}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{References}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\section[{#3}]{#1}%
+\label{#6}%
+}{}%
+%% Environment for a PTX "references" at the level of a LaTeX "section"
+\NewDocumentEnvironment{references-section-numberless}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{References}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\section*{#1}%
+\addcontentsline{toc}{section}{#3}
+\label{#6}%
+}{}%
+%%
+%% Styles for six traditional LaTeX divisions
+\titleformat{\part}[display]
+{\divisionfont\Huge\bfseries\centering}{\divisionnameptx\space\thepart}{30pt}{\Huge#1}
+[{\Large\centering\authorsptx}]
+\titleformat{\chapter}[display]
+{\divisionfont\huge\bfseries}{\divisionnameptx\space\thechapter}{20pt}{\Huge#1}
+[{\Large\authorsptx}]
+\titleformat{name=\chapter,numberless}[display]
+{\divisionfont\huge\bfseries}{}{0pt}{#1}
+[{\Large\authorsptx}]
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titleformat{\section}[hang]
+{\divisionfont\Large\bfseries}{\thesection}{1ex}{#1}
+[{\large\authorsptx}]
+\titleformat{name=\section,numberless}[block]
+{\divisionfont\Large\bfseries}{}{0pt}{#1}
+[{\large\authorsptx}]
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titleformat{\subsection}[hang]
+{\divisionfont\large\bfseries}{\thesubsection}{1ex}{#1}
+[{\normalsize\authorsptx}]
+\titleformat{name=\subsection,numberless}[block]
+{\divisionfont\large\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titleformat{\subsubsection}[hang]
+{\divisionfont\normalsize\bfseries}{\thesubsubsection}{1em}{#1}
+[{\small\authorsptx}]
+\titleformat{name=\subsubsection,numberless}[block]
+{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titleformat{\paragraph}[hang]
+{\divisionfont\normalsize\bfseries}{\theparagraph}{1em}{#1}
+[{\small\authorsptx}]
+\titleformat{name=\paragraph,numberless}[block]
+{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5em}
+%%
+%% Styles for five traditional LaTeX divisions
+\titlecontents{part}%
+[0pt]{\contentsmargin{0em}\addvspace{1pc}\contentsfont\bfseries}%
+{\Large\thecontentslabel\enspace}{\Large}%
+{}%
+[\addvspace{.5pc}]%
+\titlecontents{chapter}%
+[0pt]{\contentsmargin{0em}\addvspace{1pc}\contentsfont\bfseries}%
+{\large\thecontentslabel\enspace}{\large}%
+{\hfill\bfseries\thecontentspage}%
+[\addvspace{.5pc}]%
+\dottedcontents{section}[3.8em]{\contentsfont}{2.3em}{1pc}%
+\dottedcontents{subsection}[6.1em]{\contentsfont}{3.2em}{1pc}%
+\dottedcontents{subsubsection}[9.3em]{\contentsfont}{4.3em}{1pc}%
+%%
+%% Begin: Semantic Macros
+%% To preserve meaning in a LaTeX file
+%%
+%% \mono macro for content of "c", "cd", "tag", etc elements
+%% Also used automatically in other constructions
+%% Simply an alias for \texttt
+%% Always defined, even if there is no need, or if a specific tt font is not loaded
+\newcommand{\mono}[1]{\texttt{#1}}
+%%
+%% Following semantic macros are only defined here if their
+%% use is required only in this specific document
+%%
+%% Used for inline definitions of terms
+\newcommand{\terminology}[1]{\textbf{#1}}
+%% Titles of longer works (e.g. books, versus articles)
+\newcommand{\pubtitle}[1]{\textsl{#1}}
+%% End: Semantic Macros
+%% Localize LaTeX supplied names (possibly none)
+\renewcommand*{\abstractname}{Abstract}
+%% More flexible list management, esp. for references
+%% But also for specifying labels (i.e. custom order) on nested lists
+\usepackage{enumitem}
+%% Lists of references in their own section, maximum depth 1
+\newlist{referencelist}{description}{4}
+\setlist[referencelist]{leftmargin=!,labelwidth=!,labelsep=0ex,itemsep=1.0ex,topsep=1.0ex,partopsep=0pt,parsep=0pt}
+%% hyperref driver does not need to be specified, it will be detected
+%% Footnote marks in tcolorbox have broken linking under
+%% hyperref, so it is necessary to turn off all linking
+%% It *must* be given as a package option, not with \hypersetup
+\usepackage[hyperfootnotes=false]{hyperref}
+%% configure hyperref's  \href{}{}  and  \nolinkurl  to match listings' inline verbatim
+\renewcommand\UrlFont{\small\ttfamily}
+%% Hyperlinking active in electronic PDFs, all links without surrounding boxes and blue
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
+\hypersetup{pdftitle={Proposal for Sabbatical Leave}}
+%% If you manually remove hyperref, leave in this next command
+%% This will allow LaTeX compilation, employing this no-op command
+\providecommand\phantomsection{}
+%% Division Numbering: Chapters, Sections, Subsections, etc
+%% Division numbers may be turned off at some level ("depth")
+%% A section *always* has depth 1, contrary to us counting from the document root
+%% The latex default is 3.  If a larger number is present here, then
+%% removing this command may make some cross-references ambiguous
+%% The precursor variable $numbering-maxlevel is checked for consistency in the common XSL file
+\setcounter{secnumdepth}{3}
+%%
+%% AMS "proof" environment is no longer used, but we leave previously
+%% implemented \qedhere in place, should the LaTeX be recycled
+\newcommand{\qedhere}{\relax}
+%%
+%% A faux tcolorbox whose only purpose is to provide common numbering
+%% facilities for most blocks (possibly not projects, 2D displays)
+%% Controlled by  numbering.theorems.level  processing parameter
+\newtcolorbox[auto counter, number within=section]{block}{}
+%%
+%% This document is set to number PROJECT-LIKE on a separate numbering scheme
+%% So, a faux tcolorbox whose only purpose is to provide this numbering
+%% Controlled by  numbering.projects.level  processing parameter
+\newtcolorbox[auto counter, number within=section]{project-distinct}{}
+%% A faux tcolorbox whose only purpose is to provide common numbering
+%% facilities for 2D displays which are subnumbered as part of a "sidebyside"
+\makeatletter
+\newtcolorbox[auto counter, number within=tcb@cnt@block, number freestyle={\noexpand\thetcb@cnt@block(\noexpand\alph{\tcbcounter})}]{subdisplay}{}
+\makeatother
+%%
+%% xparse environments for introductions and conclusions of divisions
+%%
+%% introduction: in a structured division
+\NewDocumentEnvironment{introduction}{m}
+{\notblank{#1}{\noindent\textbf{#1}\space}{}}{\par\medskip}
+%% Graphics Preamble Entries
+\usepackage{tikz}
+%% If tikz has been loaded, replace ampersand with \amp macro
+%% extpfeil package for certain extensible arrows,
+%% as also provided by MathJax extension of the same name
+%% NB: this package loads mtools, which loads calc, which redefines
+%%     \setlength, so it can be removed if it seems to be in the 
+%%     way and your math does not use:
+%%     
+%%     \xtwoheadrightarrow, \xtwoheadleftarrow, \xmapsto, \xlongequal, \xtofrom
+%%     
+%%     we have had to be extra careful with variable thickness
+%%     lines in tables, and so also load this package late
+\usepackage{extpfeil}
+%% Custom Preamble Entries, late (use latex.preamble.late)
+%% Begin: Author-provided packages
+%% (From  docinfo/latex-preamble/package  elements)
+%% End: Author-provided packages
+%% Begin: Author-provided macros
+%% (From  docinfo/macros  element)
+%% Plus three from PTX for XML characters
+\newcommand{\foo}{b^{ar}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+%% End: Author-provided macros
+%% Title page information for article
+\title{Proposal for Sabbatical Leave\\
+{\large Cyberinfrastructure for Mathematics Research and STEM Higher Education}}
+\author{Steven Clontz\\
+Department of Mathematics and Statistics\\
+University of South Alabama
+}
+\date{2022 September}
+\begin{document}
+%% bottom alignment is explicit, since it normally depends on oneside, twoside
+\raggedbottom
+%% Target for xref to top-level element is document start
+\hypertarget{x:article:sabbatical-proposal}{}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+NSF's Office of Advanced Cyberinfrastructure (OAC) ``supports and coordinates the development, acquisition, and provision of state-of-the-art cyberinfrastructure resources, tools and services essential to the advancement and transformation of science and engineering'', and the NSF has doubled-down on this commitment with the recent establishment of its ``Technology, Innovation and Partnerships'' directorate, the first new NSF directorate in over 30 years. In service of this mission, Dr. Clontz serves as co-PI on NSF DUE Award 2011807, responsible for the development of several technologies to support evidence-based pedagogies in undergraduate mathematics education, and his NSF Proposal 2230153 as PI to develop an Open-Source Ecosystem fostering technologies used in the development of STEM higher-education Open Educational Resources has been recommended for funding beginning in 2023.%
+\par
+This proposal requests to leverage the momentum from these projects by allowing Clontz to spend Spring 2024 collaborating with scholars across the country in the development of advanced free-and-open-source (FOSS) cyberinfrastructure for mathematics research and STEM higher education. The American Institute of Mathematics will serve as Clontz's host for this sabbatical leave. The deliverables of this sabbatical will include multiple software products benefiting mathematics research and STEM higher education, enhancement of the human infrastructure surrounding these products, and the continued development of Clontz's ongoing research in general topology.%
+\end{abstract}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1 Background}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Background}{}{Background}{}{}{x:section:background}
+\begin{introduction}{}%
+The term \terminology{cyberinfrastructure} traces its roots back to Presidential Decision Directive NSC-63 \hyperlink{x:biblio:biblio-prez}{[{\xreffont 27}]}, and is commonly used today to refer to ``computational systems, data and information management, advanced instruments, visualization environments, and people, all linked together by software and advanced networks to improve scholarly productivity and enable knowledge breakthroughs and discoveries not otherwise possible'' \hyperlink{x:biblio:biblio-cyber-educause}{[{\xreffont 14}]}. What cyberinfrastructure ``looks like'' varies greatly between disciplines, but a constant quality of it is the utilization of modern technologies that make the jobs of scholars more efficient, thereby producing more and better advancements in STEM. As such, the National Science Foundation \hyperlink{x:biblio:biblio-cyber-nsf}{[{\xreffont 20}]} and other federal agencies have made the development of cyberinfrastructure a key priority in supporting STEM scholarship.%
+\par
+The NSF has doubled-down on this commitment with the establishment of its ``Technology, Innovation and Partnerships'' directorate in Spring 2022, the first new NSF directorate in over 30 years \hyperlink{x:biblio:biblio-tip-announce}{[{\xreffont 24}]}. Included in this directorate is the Pathways for Open Source Ecosystems solicitation \hyperlink{x:biblio:biblio-pose}{[{\xreffont 22}]} whose first call for proposals was due in May 2022.%
+\end{introduction}%
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 1.1 Cyberinfrastructure in Mathematics Research}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Cyberinfrastructure in Mathematics Research}{}{Cyberinfrastructure in Mathematics Research}{}{}{g:subsection:idm103322592}
+One of the features of many areas of mathematics, including the applicant's area of general topology, is the expansive breadth of open problems that still technically require just pencil and paper. Nonetheless, as technology advances, we are seeing more uses for tools beyond the blackboard for making advancements in even abstract mathematics. One obvious example is the use of high-performance (or even conventional) computing to brute-force the exploration of finite mathematical spaces \hyperlink{x:biblio:biblio-high-compute}{[{\xreffont 4}]}.%
+\par
+But perhaps underrated are the systems used by mathematicians for sharing and collaborating bleeding-edge advancements with the community of research. The mathematics written on paper or the chalkboard cannot travel far on their own; generally, mathematicians use software such as LaTeX to typeset proofs and formulas for distribution in PDF format. Then, rather than asking colleagues from across the country to physically visit their office computer, the researcher uses technologies such as email, a personal website, and\slash{}or a preprint server to post their work for dissemination. High-quality work must then be submitted to a journal to be vetted by peers, a process handled sometimes through email, and other times via non-trivial content management systems hosted in the cloud. These results are then published, but this content is now burned into inaccessible (in many senses of the word) PDFs locked behind paywalls. A typical strategy for finding recent developments in mathematics is to Google key words, but a search for ``selection games'', an area of mathematical game theory studied by the applicant, quickly reveals the limitations of this approach.%
+\par
+One approach to overcoming this limitation is the development of databases of mathematical objects. As of writing, the \pubtitle{Catalogue of Mathematical Datasets} \hyperlink{x:biblio:biblio-mathdb}{[{\xreffont 6}]} enumerates \(84\) such tools. One of these is the \pubtitle{\(\pi\)-Base} (a.k.a. pi-Base) community database of topological counterexamples \hyperlink{x:biblio:biblio-pibase}{[{\xreffont 13}]}, created by software engineer James Dabbs. Clontz joined the project in 2017 to serve as its lead mathematical editor. In the beginning the database was treated similar to a wiki, with unreviewed contributions made by several mathematicians, students, and other unknown contributors. To address this, changes were made to the software to enforce a level of peer review, and Clontz was awarded with an internal Faculty Development Council grant to hire a student to audit and expand the content of the database.%
+\par
+The result of this support was successful, and today the pi-Base is commonly cited on mathematics discussion boards used by students and researchers alike \hyperlink{x:biblio:biblio-mathse-search}{[{\xreffont 28}]} \hyperlink{x:biblio:biblio-mo-search}{[{\xreffont 29}]}. However, it also exposed critical inefficiencies in the user experience (UX) of both contributing to the database and reviewing contributions.%
+\par
+In \hyperlink{x:biblio:biblio-buzzard}{[{\xreffont 7}]}, Buzzard points to the \(\pi\)-Base as an important example of how semantic search helps researchers more quickly and thorougly query the literature than standard search engines. Furthermore, he points to the increasing use of in computer-verified proof techniques as another emerging element of cyberinfrastructure in mathematics research. In particular, the Lean Prover \hyperlink{x:biblio:biblio-lean}{[{\xreffont 19}]} from Microsoft Research and the \mono{mathlib} \hyperlink{x:biblio:biblio-mathlib}{[{\xreffont 17}]} library of mathematics written in Lean are becoming the de facto standard for formalization of mathematical results that can be verified by computer.%
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 1.2 Cyberinfrastructure in STEM Higher Education}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Cyberinfrastructure in STEM Higher Education}{}{Cyberinfrastructure in STEM Higher Education}{}{}{g:subsection:idm103307776}
+Logistics are frequently a limiting factor in the adoption of evidence-based practices in instruction, particularly in undergraduate mathematics education \hyperlink{x:biblio:biblio-logistics}{[{\xreffont 25}]}. Often, faculty are willing, if not eager, to change instruction in ways that benefit students, but do not have the resources to implement such change.%
+\par
+Likewise, the authors of \hyperlink{x:biblio:biblio-calcplot3d}{[{\xreffont 26}]} observed the limitations of educational software that technically works, but isn't designed for platforms that are readily in the hands of students and instructors. For example, while CalcPlot3D has always been free and open-source software, it was originally limited in its reach due to being written in Java. By rewriting the application in (the similarly-named but unrelated programming language) Javascript, students and instructors were no longer required to be at a computer station with a Java runtime installed, but could instead utilize the program from any device with a web browser.%
+\par
+Partially supported by NSF DUE 2011807, Clontz has developed two software applications to support mathematics instruction and Team-Based Inquiry Learning (TBIL), a flavor of Team-Based Learning that was the focus of the University's most recent Quality Enhancement Project. The first is the CheckIt Platform \hyperlink{x:biblio:biblio-checkit}{[{\xreffont 8}]}, allowing instructors to write minimal code to generate randomized mathematics exercises that can be automatically exported not only to LaTeX\slash{}PDF for printing, but also published to the web as practice exercises, and to LMSes including Canvas, D2L, and Moodle. The second is Scratchee \hyperlink{x:biblio:biblio-scratchee}{[{\xreffont 10}]}, a virtualization of the Instant Feedback Assessment Technique (IF-AT) \hyperlink{x:biblio:biblio-ifat}{[{\xreffont 12}]} integral to TBIL. In addition, Clontz serves as collaborator on the PreTeXt project \hyperlink{x:biblio:biblio-pretext}{[{\xreffont 5}]}, developing a user-friendly platform for authoring the PreTeXt markup language that produces both PDF and accessible HTML documents (including textbooks and research manuscripts) from the same source, including this proposal \hyperlink{x:biblio:biblio-repo}{[{\xreffont 11}]}. Furthermore, docuemnts authored in PreTeXt can also be automatically published as Braille \hyperlink{x:biblio:biblio-braille}{[{\xreffont 2}]}, an uncommon feature for commercial textbooks, much less free Open Educational Resources (OER), providing access to mathematics often out of reach to blind students.%
+\par
+In addition to supporting mathematics instruction directly, the CheckIt Platform is also being used to support Research in Undergraduate Mathematics Education (RUME). Exercises on the platform are designed to assess particular learning outcomes; in order to measure the effectiveness of instruction as part of DUE 2011807, CheckIt-generated assessments will be used at several campuses across the country. This allows instructors to administer as many versions of each exercise as needed for logistical purposes, while still ensuring that each version of the exercise measures exactly the same learning outcome.%
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 1.3 Free and Open-Source Software (FOSS)}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Free and Open-Source Software (FOSS)}{}{Free and Open-Source Software (FOSS)}{}{}{g:subsection:idm103337712}
+The focus of this project is to produce \terminology{Free and Open-Source Software} that will benefit scholars, instructors, and students of mathematics. Frequently, the NSF requires that software products it funds be FOSS. It's worth clarifying what is meant by this.%
+\par
+\terminology{Open-source software} is most easily defined. All code written as part of this project will be made available to the public via Clontz's GitHub \hyperlink{x:biblio:biblio-ghclontz}{[{\xreffont 9}]} (or other publicly available repositories as appropriate). This means that anyone will be able to obtain a copy of any software developed during this sabbatical, use this software to benefit their research or instruction, and contribute corrections or improvements to the codebase to benefit others.%
+\par
+The word \terminology{free} in FOSS does the heaviest lifting. Primarily, it means that this software will be explicitly licensed for free use and adaptation by anyone who wishes, removing legal barriers that might prevent its adoption by other researchers or instructors.%
+\par
+But for the purposes of this project, ``free'' also implies that the software, whenever possible, will be developed mindfully to avoid dependencies on non-free infrastructures. For example, technically the Canvas Learning Management System is FOSS software \hyperlink{x:biblio:biblio-canvas}{[{\xreffont 16}]}; however, that does not mean that it can truly be adopted without cost. Maintainance of a learning management system server incurs both technology costs and personhour costs, which is why many campuses, including the University, simply pay Instructure to provide the service rather than utilize its FOSS directly. Technical debt can never be completely avoided; however, by making smart design decisions in the development of software packages that aren't intended to turn a profit, this debt can be kept minimal. To this end, most of the software produced will either be written in HTML\slash{}Javascript, which can be freely hosted and run in any modern web browser, or will produce static such HTML\slash{}JS products for dissemination.%
+\par
+Finally, NSF's recognition of the critical role FOSS products play in the cyberinfrastructure of STEM research is witnessed by solicitations such as its new Pathways for Open-Source Ecosystems solicitation mentioned earlier. Clontz's \textdollar{}266K one-year Phase I proposal as PI to establish an Open-Source Ecosystem for the PreTeXt community has been recommended for funding by an NSF program officer as part of the inaugural round of awards, and will lead to a \textdollar{}1.5M two-year Phase II proposal to be submitted in Fall 2023.%
+\end{subsectionptx}
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 2 Proposed Activities}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Proposed Activities}{}{Proposed Activities}{}{}{x:section:activities}
+\begin{introduction}{}%
+Sabbatical leave is requested for Spring 2024. This timing is requested to complement Clontz's anticipated NSF-funded release from teaching duties in Fall 2023.%
+\par
+The American Institute of Mathematics (AIM) located in San Jose, California will serve as host for this sabbatical, connecting Clontz with other likeminded scholars engaged in the work of developing cyberinfrastructure for mathematics research and education. To support these activities, AIM has offered Clontz office space for the duration of the sabbatical, as well as funding to cover travel to San Jose and local expenses.%
+\end{introduction}%
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.1 Cyberinfrastructure for Mathematics Research}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Cyberinfrastructure for Mathematics Research}{}{Cyberinfrastructure for Mathematics Research}{}{}{g:subsection:idm103288512}
+A current shortcoming of the pi-Base application is lack of tooling to preview work on the actual web application (or a facsimile thereof) by both contributors and referees. Instead, numerical IDs for each object in the database must be manually looked up and compared across several files, and this process allows plenty of room for human error. The main development goal for the pi-Base is to add functionality via GitHub Actions that will automatically provide an online preview of how individual contributions will change the overall database, which can be used by both contributors and referees to catch such mistakes before they are published to the public. Such features will also assist new contributors in making improvements by providing a more graphical user interface compared to the current editing of text files.%
+\par
+To begin to make these improvements, Clontz will collaborate with the pi-Base's lead developer James Dabbs for one week at the beginning of the sabbatical for a focused development sprint. Note that the pi-Base is developed using the same technologies (particularly, the Svelte Javascript framework) as Clontz's CheckIt and Scratchee projects, and is used by Dabbs in his daily work as a software engineer. As such, this meeting will have cascading effects across the rest of the work performed throughout the sabbatical, by providing time and support for Clontz to pick up more advanced Javascript programming techniques fueled by best industry practices. In addition, this training will enable Clontz to serve not only as the pi-Base's lead mathematical editor, but also as a co-developer of the platform itself, ensuring that an academic researcher is capable of maintaining the platform in case of future technical issues.%
+\par
+Additionally, Clontz will use time granted by sabbatical to become fluent in the Lean proof assistant language, and contribute his expertise in general topology to the \mono{mathlib} library. Collaborating with Jim Fowler at Ohio State University, Clontz will also work to integrate the \(\pi\)-Base and \mono{mathlib} databases to connect computer-verified results in mathematics to an easily-accessible semantic search enginer for use by researchers.%
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.2 Cyberinfrastructure for STEM Higher Education}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Cyberinfrastructure for STEM Higher Education}{}{Cyberinfrastructure for STEM Higher Education}{}{}{g:subsection:idm103282176}
+Throughout 2023, Clontz will be working on the development of an Open Source Ecosystem for PreTeXt software products used to develop Open Educational Resources for STEM higher education classrooms. In particular, Clontz's NSF-funded teaching release in Fall 2023 will allow him to hold virtual office hours for community members, iterate on security infrastructure for PreTeXt products, and develop a Software-as-a-Service solution for authoring, building, and deploying PreTeXT documents in the cloud. A \textdollar{}1.5M Phase II proposal will be submitted to the NSF around October 2023; sabbatical release in Spring 2024 will facilitate the continued development of this Open-Source Ecosystem while this proposal is under review.%
+\par
+After preliminary development for two years for Clontz's personal use, the CheckIt Platform received its first public release in June 2021. Two dozen instructors participated in an introductory authoring workshop, and as of August 2022 randomized exercise banks have be published or are in development for calculus, linear algebra, differential equations, introductory statistics, quantitative reasoning, introduction to proofs, and mathematics for liberal arts courses, and were been used in classrooms across the country throughout 2021 and 2022. This quick evidence of productivity witnesses the utility of the platform, and it has also generated many requests for new features and bugfixes to be worked on during this sabbatical.%
+\par
+An alpha version of the Scratchee app for creating and sharing virtualized scratch cards for IF-AT was released in late July 2021. This prototype was created in response to developments related to Clontz's NSF grant for supporting Team-Based Inquiry Learning; while physical IF-AT cards are not incredibly expensive, they introduce logistical friction for implementing TBIL (ordering the cards, waiting for shipment, aligning multiple-choice questions with the predetermined correct responses printed on the card). Multiple TBIL instructors have used Scratchee throughout 2021 and 2022; their experiences will be used to determine the necessary enhancements required for a public release of the platform for the broader Team-Based Learning community.%
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.3 External Grant Activity}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{External Grant Activity}{}{External Grant Activity}{}{}{g:subsection:idm103278304}
+The primary external mechanism used to fund proposed activities related to the infrastructure of STEM higher education is the NSF POSE solicitation. As noted, a \textdollar{}1.5M two-year Phase II proposal will be submitted in Fall 2023, to begin following the requested Spring 2024 sabbatical.%
+\par
+Another relevant solicitation is Research Experiences for Undergraduates (REU) \hyperlink{x:biblio:biblio-reu}{[{\xreffont 23}]}. In particular, the research data used as the basis for the pi-Base was originally developed as part of an NSF-funded REU \hyperlink{x:biblio:biblio-steen}{[{\xreffont 15}]}, which resulted in the reference text \pubtitle{Counterexamples in Topology}. In this spirit, a new REU program would allow students to extend this work using the pi-Base, expanding its coverage of the literature and making the platform more useful by researchers. Additionally, unlike some traditional mathematics REUs, students would gain knowledge of the cyberinfrastructure powering the pi-Base platform, and relevants skills that would extend to careers across STEM. This proposal is anticipated to be submitted in Summer 2024, developed as part of a Spring 2024 sabbatical.%
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.4 Additional Activites}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Additional Activites}{}{Additional Activites}{}{}{g:subsection:idm103283968}
+Sabbatical leave from instruction is requested to facilitate progress on the above activities while allowing Clontz to continue his active line of traditional mathematics research on the game-theoretic characterization of topological properties. Briefly, a \terminology{topological space} models data points along with neighborhoods that describe nearby data; for example, the Euclidean line uses real numbers \(x\in\mathbb R\) as points, and intervals \((x-r,x+r)\) of radius \(r>0\) as neighborhoods. At the time of writing, Clontz is investigating how to characterize topological dimension (as simple examples, a square is two-dimensional and a cube is three-dimensional) in terms of which player in a certain game defined for each topological space has a winning strategy. Recent results by Babinkostova and Scheepers published in the Proceedings of the Americian Mathematical Society have established three such games \hyperlink{x:biblio:biblio-scheepers}{[{\xreffont 3}]}; however, these results are only guaranteed when a \terminology{metric} measuring distance between points as non-negative real numbers is known to exist (for example, \(|x-y|\) is the distance from \(x\) to \(y\) on the Euclidean line of real numbers). When such a measurement is not guaranteed, the two common definitions of dimension no longer are equivalent, making the study of non-metrizable spaces difficult. This also illustrates the utility of a more robust pi-Base, as finding literature on dimension in the context of non-metrizable spaces is very difficult when only using search engines and chasing citations, so this work will also be incorporated into the pi-Base as it is completed to assist future scholars.%
+\end{subsectionptx}
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 3 Summary of Anticipated Outcomes}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Summary of Anticipated Outcomes}{}{Summary of Anticipated Outcomes}{}{}{x:section:outcomes}
+In summary, sabbatical leave will provide Clontz support in the development of multiple software packages in support of mathematics research and instruction, enhancement of the technological and human infrastructure surrounding these products, the preparation of several NSF proposals, and continued success in mathematics research related to general and set-theoretic topology. Additionally, collaboration with the American Institute of Mathematics, which hosts over twenty workshops involving hundreds of mathematicians annually, will provide Clontz with networking opportunities that will further his career and bring positive exposure to the University.%
+\end{sectionptx}
+%% A lineskip in table of contents as a transition to the rest of the backmatter
+\addtocontents{toc}{\vspace{\normalbaselineskip}}
+%
+%
+%
+\typeout{************************************************}
+\typeout{References  References}
+\typeout{************************************************}
+%
+\begin{references-section-numberless}{References}{}{References}{}{}{x:references:references-backmatter}
+%% If this is a top-level references
+%%   you can replace with "thebibliography" environment
+\begin{referencelist}
+\bibitem[1]{x:biblio:biblio-aim}\hypertarget{x:biblio:biblio-aim}{}American Institute of Mathematics, \textit{American Institute of Mathematics}. \href{https://aimath.org/}{\nolinkurl{https://aimath.org/}}.
+\bibitem[2]{x:biblio:biblio-braille}\hypertarget{x:biblio:biblio-braille}{}American Institute of Mathematics, \textit{Math that feels good: Creating learning resources for blind students}. \href{https://aimath.org/aimnews/braille_full/}{\nolinkurl{https://aimath.org/aimnews/braille_full/}}.
+\bibitem[3]{x:biblio:biblio-scheepers}\hypertarget{x:biblio:biblio-scheepers}{}L. Babinkostova \& M. Scheepers, \textit{Countable dimensionality, a game and the Haver property}. Proceedings of the American Mathematical Society. \href{https://www.ams.org/proc/0000-000-00/S0002-9939-2021-15492-0/S0002-9939-2021-15492-0.pdf}{\nolinkurl{https://www.ams.org/proc/0000-000-00/S0002-9939-2021-15492-0/S0002-9939-2021-15492-0.pdf}}.
+\bibitem[4]{x:biblio:biblio-high-compute}\hypertarget{x:biblio:biblio-high-compute}{}D. H. Bailey, D. Broadhurst, Y. Hida, Xiaoye S. Li, \& B. Thompson, \textit{High Performance Computing Meets Experimental Mathematics}. Proceedings of the 2002 ACM\slash{}IEEE Conference on Supercomputing, 2002, \textbf{SC '02}. \href{https://doi.org/10.1109/SC.2002.10060}{\nolinkurl{https://doi.org/10.1109/SC.2002.10060}}.
+\bibitem[5]{x:biblio:biblio-pretext}\hypertarget{x:biblio:biblio-pretext}{}Rob Beezer, \textit{PreTeXt}. \href{https://pretextbook.org/}{\nolinkurl{https://pretextbook.org/}}.
+\bibitem[6]{x:biblio:biblio-mathdb}\hypertarget{x:biblio:biblio-mathdb}{}Katja Berčič, \textit{Catalogue of Mathematical Datasets}. \href{https://mathdb.mathhub.info/}{\nolinkurl{https://mathdb.mathhub.info/}}.
+\bibitem[7]{x:biblio:biblio-buzzard}\hypertarget{x:biblio:biblio-buzzard}{}Kevin Buzzard, \textit{What is the point of computers? A question for pure mathematicians}. arXiv, 2021, \href{https://arxiv.org/abs/2112.11598}{\nolinkurl{https://arxiv.org/abs/2112.11598}}.
+\bibitem[8]{x:biblio:biblio-checkit}\hypertarget{x:biblio:biblio-checkit}{}Steven Clontz, \textit{Checkit}. \href{https://checkit.clontz.org/}{\nolinkurl{https://checkit.clontz.org/}}.
+\bibitem[9]{x:biblio:biblio-ghclontz}\hypertarget{x:biblio:biblio-ghclontz}{}Steven Clontz, \textit{GitHub Repositories}. \href{https://github.com/StevenClontz/}{\nolinkurl{https://github.com/StevenClontz/}}.
+\bibitem[10]{x:biblio:biblio-scratchee}\hypertarget{x:biblio:biblio-scratchee}{}Steven Clontz, \textit{Scratchee}. \href{https://scratchee.clontz.org/}{\nolinkurl{https://scratchee.clontz.org/}}.
+\bibitem[11]{x:biblio:biblio-repo}\hypertarget{x:biblio:biblio-repo}{}Steven Clontz, \textit{StevenClontz\slash{}sabbatical-2024-spring}. GitHub.\\ \href{https://github.com/StevenClontz/sabbatical-2024-spring}{\nolinkurl{https://github.com/StevenClontz/sabbatical-2024-spring}}.
+\bibitem[12]{x:biblio:biblio-ifat}\hypertarget{x:biblio:biblio-ifat}{}S.H. Cotner, B.A. Fall, S.M. Wick, J.D. Walker, \& P.M. Baepler, \textit{Rapid feedback assessment methods: Can we improve engagement and preparation for exams in large-enrollment courses?}. Journal of Science Education and Technology, 2008, \textbf{17}, 5. 437\textendash{}443.
+\bibitem[13]{x:biblio:biblio-pibase}\hypertarget{x:biblio:biblio-pibase}{}James Dabbs, \textit{\(\pi\)-Base}. \href{https://topology.pi-base.org/}{\nolinkurl{https://topology.pi-base.org/}}.
+\bibitem[14]{x:biblio:biblio-cyber-educause}\hypertarget{x:biblio:biblio-cyber-educause}{}EDUCAUSE Campus Cyberinfrastructure Working Group and Coalition for Academic Scientific Computation, \textit{Developing a Coherent Cyberinfrastructure from Local Campus to National Facilities: Challenges and Strategies}, 2009. \href{https://library.educause.edu/-/media/files/library/2009/4/epo0906-pdf.pdf}{\nolinkurl{https://library.educause.edu/-/media/files/library/2009/4/epo0906-pdf.pdf}}.
+\bibitem[15]{x:biblio:biblio-steen}\hypertarget{x:biblio:biblio-steen}{}Deanna Haunsperger \& Stephen Kennedy, \textit{The Idea Man: An Interview with Lynn Steen}. Mathematics Magazine, 2015, \textbf{88}, 3 163\textendash{}176. \href{https://doi.org/10.4169/math.mag.88.3.163}{\nolinkurl{https://doi.org/10.4169/math.mag.88.3.163}}.
+\bibitem[16]{x:biblio:biblio-canvas}\hypertarget{x:biblio:biblio-canvas}{}Instructure, \textit{Canvas LMS on GitHub}. \href{https://github.com/instructure/canvas-lms}{\nolinkurl{https://github.com/instructure/canvas-lms}}.
+\bibitem[17]{x:biblio:biblio-mathlib}\hypertarget{x:biblio:biblio-mathlib}{}Lean Community, \textit{mathlib}. \href{https://github.com/leanprover-community/mathlib}{\nolinkurl{https://github.com/leanprover-community/mathlib}}.
+\bibitem[18]{x:biblio:biblio-tbil-award}\hypertarget{x:biblio:biblio-tbil-award}{}Andrew Lewis, Shiladitya Chaudhury, Steven Clontz, Julie Estis, \& Christopher Parrish, \textit{Award Abstract \#2011807: Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning}. National Science Foundation. \href{https://nsf.gov/awardsearch/showAward?AWD_ID=2011807}{\nolinkurl{https://nsf.gov/awardsearch/showAward?AWD_ID=2011807}}.
+\bibitem[19]{x:biblio:biblio-lean}\hypertarget{x:biblio:biblio-lean}{}Microsoft Research, \textit{Lean}. \href{https://leanprover.github.io/}{\nolinkurl{https://leanprover.github.io/}}.
+\bibitem[20]{x:biblio:biblio-cyber-nsf}\hypertarget{x:biblio:biblio-cyber-nsf}{}National Science Foundation, \textit{About Advanced Cyberinfrastructure}. \href{https://www.nsf.gov/cise/oac/about.jsp}{\nolinkurl{https://www.nsf.gov/cise/oac/about.jsp}}.
+\bibitem[21]{x:biblio:biblio-iuse}\hypertarget{x:biblio:biblio-iuse}{}National Science Foundation, \textit{Improving Undergraduate STEM Education: Education and Human Resources (IUSE: EHR)}. \href{https://www.nsf.gov/pubs/2021/nsf21579/nsf21579.htm}{\nolinkurl{https://www.nsf.gov/pubs/2021/nsf21579/nsf21579.htm}}.
+\bibitem[22]{x:biblio:biblio-pose}\hypertarget{x:biblio:biblio-pose}{}National Science Foundation, \textit{Pathways to Enable Open-Source Ecosystems (POSE)}. \\\href{https://beta.nsf.gov/funding/opportunities/pathways-enable-open-source-ecosystems-pose}{\nolinkurl{https://beta.nsf.gov/funding/opportunities/pathways-enable-open-source-ecosystems-pose}}.
+\bibitem[23]{x:biblio:biblio-reu}\hypertarget{x:biblio:biblio-reu}{}National Science Foundation, \textit{Research Experiences for Undergraduates (REU)}. \href{https://www.nsf.gov/pubs/2022/nsf22601/nsf22601.htm}{\nolinkurl{https://www.nsf.gov/pubs/2022/nsf22601/nsf22601.htm}}.
+\bibitem[24]{x:biblio:biblio-tip-announce}\hypertarget{x:biblio:biblio-tip-announce}{}National Science Foundation, \textit{NSF establishes new Directorate for Technology, Innovation and Partnerships}.\\ \href{https://beta.nsf.gov/news/nsf-establishes-new-directorate-technology-innovation-and-partnerships}{\nolinkurl{https://beta.nsf.gov/news/nsf-establishes-new-directorate-technology-innovation-and-partnerships}}.
+\bibitem[25]{x:biblio:biblio-logistics}\hypertarget{x:biblio:biblio-logistics}{}S.E. Shadle, A. Marker, \& B. Earl, \textit{Faculty drivers and barriers: laying the groundwork for undergraduate STEM education reform in academic departments}. IJ STEM Ed, 2017, \textbf{4}, 8. \href{https://doi.org/10.1186/s40594-017-0062-7}{\nolinkurl{https://doi.org/10.1186/s40594-017-0062-7}}.
+\bibitem[26]{x:biblio:biblio-calcplot3d}\hypertarget{x:biblio:biblio-calcplot3d}{}M. VanDieren, D. Moore-Russo, \& P. Seeburger, \textit{Technological Pedagogical Content Knowledge for Meaningful Learning and Instrumental Orchestrations: A Case Study of a Cross Product Exploration Using CalcPlot3D.}. Teaching and Learning Mathematics Online, 2020, 267\textendash{}294.
+\bibitem[27]{x:biblio:biblio-prez}\hypertarget{x:biblio:biblio-prez}{}The White House, \textit{Presidential Decision Directive NSC-63}, 1998. \href{https://fas.org/irp/offdocs/pdd/pdd-63.htm}{\nolinkurl{https://fas.org/irp/offdocs/pdd/pdd-63.htm}}.
+\bibitem[28]{x:biblio:biblio-mathse-search}\hypertarget{x:biblio:biblio-mathse-search}{}\textit{Search results for url topology.jdabbs.com}, Math.Stackexchange. \href{https://math.stackexchange.com/search?q=url\%3A\%22topology.jdabbs.com\%22}{\nolinkurl{https://math.stackexchange.com/search?q=url\%3A\%22topology.jdabbs.com\%22}}.
+\bibitem[29]{x:biblio:biblio-mo-search}\hypertarget{x:biblio:biblio-mo-search}{}\textit{Search results for url topology.jdabbs.com}, MathOverflow. \href{https://mathoverflow.net/search?q=url\%3A\%22topology.jdabbs.com\%22}{\nolinkurl{https://mathoverflow.net/search?q=url\%3A\%22topology.jdabbs.com\%22}}.
+\end{referencelist}
+\end{references-section-numberless}
+\end{document}
