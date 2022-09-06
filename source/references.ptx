@@ -126,11 +126,6 @@
         <title>About Advanced Cyberinfrastructure</title>.
         <url href="https://www.nsf.gov/cise/oac/about.jsp"/>.
     </biblio>
-    <biblio type="raw" xml:id="biblio-aisl">
-        National Science Foundation,
-        <title>Advancing Informal STEM Learning (AISL)</title>.
-        <url href="https://www.nsf.gov/pubs/2021/nsf21599/nsf21599.htm"/>.
-    </biblio>
     <biblio type="raw" xml:id="biblio-iuse">
         National Science Foundation,
         <title>Improving Undergraduate STEM Education: Education and 
@@ -145,17 +140,12 @@
     <biblio type="raw" xml:id="biblio-reu">
         National Science Foundation,
         <title>Research Experiences for Undergraduates (REU)</title>.
-        <url href="https://www.nsf.gov/pubs/2019/nsf19582/nsf19582.htm"/>.
+        <url href="https://www.nsf.gov/pubs/2022/nsf22601/nsf22601.htm"/>.
     </biblio>
     <biblio type="raw" xml:id="biblio-tip-announce">
         National Science Foundation,
         <title>NSF establishes new Directorate for Technology, Innovation and Partnerships</title>.
         <url href="https://beta.nsf.gov/news/nsf-establishes-new-directorate-technology-innovation-and-partnerships"/>.
-    </biblio>
-    <biblio type="raw" xml:id="biblio-cyber-researchgov">
-        Research.gov,
-        <title>Shared Cyberinfrastructure</title>.
-        <url href="https://www.research.gov/research-portal/appmanager/base/desktop?_nfpb=true&amp;_windowLabel=sandiMenu_10_1_1_1_1_1_1&amp;_urlType=action&amp;wlpsandiMenu_10_1_1_1_1_1_1_id=MTS%3A%3AKTL4JTCZF&amp;wlpsandiMenu_10_1_1_1_1_1_1_action=selectResearchAsset"/>.
     </biblio>
     <biblio type="raw" xml:id="biblio-logistics">
         S.E. Shadle, A. Marker, &amp; B. Earl,
@@ -166,11 +156,6 @@
         <issue>8</issue>.
         <url href="https://doi.org/10.1186/s40594-017-0062-7"/>.
     </biblio> 
-    <biblio type="raw" xml:id="biblio-atlas">
-        Dmitri Shakhmatov and Stephen Watson,
-        <title>Topology Atlas</title>.
-        <url href="http://at.yorku.ca/"/>.
-    </biblio>
     <biblio type="raw" xml:id="biblio-calcplot3d">
         M. VanDieren, D. Moore-Russo, &amp; P. Seeburger,
         <title>Technological Pedagogical Content Knowledge for Meaningful Learning and Instrumental Orchestrations:
